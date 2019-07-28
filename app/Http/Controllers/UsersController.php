@@ -51,6 +51,21 @@ class UsersController extends Controller
         }
         return view("backEnd.users", compact("Users", "Permissions", "GeneralWebmasterSections"));
     }
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function users()
+    {
+        //
+        // General for all pages
+        $GeneralWebmasterSections = WebmasterSection::where('status', '=', '1')->orderby('row_no', 'asc')->get();
+        // General END
+            $Users = User::orderby('id', 'asc')->paginate(env('BACKEND_PAGINATION'));
+
+        return view("backEnd.users.user.users", compact("Users", "GeneralWebmasterSections"));
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -82,7 +97,7 @@ class UsersController extends Controller
             'name' => 'required',
             'email' => 'required|email|unique:users',
             'password' => 'required',
-            'permissions_id' => 'required'
+            // 'permissions_id' => 'required'
         ]);
 
 
@@ -101,7 +116,7 @@ class UsersController extends Controller
         $User->name = $request->name;
         $User->email = $request->email;
         $User->password = bcrypt($request->password);
-        $User->permissions_id = $request->permissions_id;
+        $User->permissions_id = 1;
         $User->photo = $fileFinalName_ar;
         $User->connect_email = $request->connect_email;
         $User->connect_password = $request->connect_password;
@@ -165,7 +180,7 @@ class UsersController extends Controller
             $this->validate($request, [
                 'photo' => 'mimes:png,jpeg,jpg,gif|max:3000',
                 'name' => 'required',
-                'permissions_id' => 'required'
+                // 'permissions_id' => 'required'
             ]);
 
             if ($request->email != $User->email) {
@@ -190,7 +205,7 @@ class UsersController extends Controller
             if ($request->password != "") {
                 $User->password = bcrypt($request->password);
             }
-            $User->permissions_id = $request->permissions_id;
+            $User->permissions_id = 1;
             //}
             if ($request->photo_delete == 1) {
                 // Delete a User file
@@ -221,6 +236,14 @@ class UsersController extends Controller
         } else {
             return redirect()->action('UsersController@index');
         }
+    }
+
+    public function delete($id){
+        $User = User::find($id);
+        $User->delete();
+        return redirect()->route('users/reg')->with('message',  trans("backLang.deleteDone"));
+
+
     }
 
     /**

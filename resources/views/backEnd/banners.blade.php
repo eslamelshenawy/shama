@@ -66,6 +66,7 @@
                         $title_var = "title_" . trans('backLang.boxCode');
                         $title_var2 = "title_" . trans('backLang.boxCodeOther');
                         ?>
+
                         @foreach($Banners as $Banner)
                             <?php
                             if ($Banner->$title_var != "") {
@@ -74,6 +75,7 @@
                                 $title = $Banner->$title_var2;
                             }
                             ?>
+
                             <tr>
                                 <td><label class="ui-check m-a-0">
                                         <input type="checkbox" name="ids[]" value="{{ $Banner->id }}"><i
@@ -142,6 +144,7 @@
                     </table>
 
                 </div>
+
                 <footer class="dker p-a">
                     <div class="row">
                         <div class="col-sm-3 hidden-xs">

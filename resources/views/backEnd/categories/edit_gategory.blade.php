@@ -5,7 +5,6 @@
 
 
 
-
     <div id="content" class="app-content box-shadow-z0" role="main">
         <!-- ############ PAGE START-->
         <div class="padding">
@@ -46,7 +45,7 @@
                             <div class="col-sm-10">
                                 <input placeholder="" class="form-control"
                                        id="title_heb" required="" dir="rtl" name="title_heb"
-                                       type="text" value="{{$category->name_en}}">
+                                       type="text" value="{{$category->name_heb}}">
                             </div>
                         </div>
 
@@ -57,8 +56,25 @@
                             <div class="col-sm-10">
                                 <input placeholder="" class="form-control"
                                        id="title_en" required="" dir="ltr"
-                                       name="title_en" type="text" value="{{$category->name_heb}}">
+                                       name="title_en" type="text" value="{{$category->name_en}}">
                             </div>
+                        </div>
+                        
+                           <div class="form-group row">
+                            <label for="father_id" class="col-sm-2 form-control-label"> {{ trans('backLang.select_type') }} </label>
+                            <div class="col-sm-10">
+                                <select name="type_id" id="type_id" class="form-control c-select">
+                                    <option value="0">{{ trans('backLang.select_type') }}</option>
+                                    @foreach(\App\Topic::where('webmaster_id',13)->get()  as $type )
+                                       @if(App::getLocale()  == 'en')
+                                    <option value="{{$type->id}}" {{($category->type_id == $type->id) ? 'selected' : ''  }}>{{$type->title_en}}</option>
+                                    @else
+                                     <option value="{{$type->id}}" {{($category->type_id == $type->id) ? 'selected' : ''  }}>{{$type->title_il}}</option>
+                                      @endif
+                                        @endforeach
+                                </select>
+                            </div>
+
                         </div>
 
                         <div class="form-group row">
@@ -97,13 +113,13 @@
                             <div class="col-sm-10">
                                 <div class="radio">
                                     <label class="ui-check ui-check-md">
-                                        <input id="status1" class="has-value" checked="checked" name="status" type="radio" value="1">
+                                        <input id="status1" class="has-value" {{$category->status == 1 ?'checked' :'' }} name="status" type="radio" value="1">
                                         <i class="dark-white"></i>
                                         {{ trans('backLang.active') }}
                                     </label>
                                     &nbsp; &nbsp;
                                     <label class="ui-check ui-check-md">
-                                        <input id="status2" class="has-value" name="status" type="radio" value="0">
+                                        <input id="status2" class="has-value" {{$category->status == 0 ?'checked' :'' }} name="status" type="radio" value="0">
                                         <i class="dark-white"></i>
                                         {{ trans('backLang.notActive') }}
                                     </label>

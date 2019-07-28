@@ -48,7 +48,15 @@
                                 <select name="section_id" id="section_id" class="form-control c-select">
                                     <option value="0">{{ trans('backLang.Categories') }}</option>
                                     @foreach(\App\category::get()  as $type )
+                                                                          @if(App::getLocale()  == 'en')
+
                                         <option value="{{$type->id}}" {{($category->category_id == $type->id) ? 'selected' : ''  }}>{{$type->name_en}}</option>
+                                          @else
+                                        <option value="{{$type->id}}" {{($category->category_id == $type->id) ? 'selected' : ''  }}>{{$type->name_heb}}</option>
+
+
+                                                                                                        @endif
+
                                     @endforeach
                                 </select>
 
@@ -60,7 +68,11 @@
                                 <select name="type_id" id="type_id" class="form-control c-select">
                                     <option value="0">{{ trans('backLang.select_type') }}</option>
                                     @foreach(\App\Topic::where('webmaster_id',13)->get()  as $type )
+                                      @if(App::getLocale()  == 'en')
                                         <option value="{{$type->id}}" {{($category->type_id == $type->id) ? 'selected' : ''  }}>{{$type->title_en}}</option>
+                                          @else
+                                         <option value="{{$type->id}}" {{($category->type_id == $type->id) ? 'selected' : ''  }}>{{$type->title_il}}</option>
+                                         @endif
                                     @endforeach
                                 </select>
                             </div>
@@ -86,6 +98,27 @@
                         <div class="form-group row">
                             <label for="photo" class="col-sm-2 form-control-label"> {{ trans('backLang.bannerPhoto') }}</label>
                             <div class="col-sm-10">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div id="topic_photo" class="col-sm-4 box p-a-xs">
+                                            <a target="_blank" href="{{url('/uploads/topics')}}/{{$category->photo}}">
+                                                <img src="{{url('/uploads/topics')}}/{{$category->photo}}" class="img-responsive">
+                                                15619826741352.jpg
+                                            </a>
+                                            <br>
+                                            <a
+                                                    onclick="document.getElementById('topic_photo').style.display='none';document.getElementById('photo_delete').value='1';document.getElementById('undo').style.display='block';"
+                                                    class="btn btn-sm btn-default">حذف</a>
+                                        </div>
+                                        <div id="undo" class="col-sm-4 p-a-xs" style="display: none">
+                                            <a onclick="document.getElementById('topic_photo').style.display='block';document.getElementById('photo_delete').value='0';document.getElementById('undo').style.display='none';">
+                                                <i class="material-icons">
+                                                    </i> تراجع عن الحذف</a>
+                                        </div>
+
+                                        <input id="photo_delete" name="photo_delete" type="hidden" value="0" class="has-value">
+                                    </div>
+                                </div>
                                 <input class="form-control" id="photo" accept="image/*" name="photo" type="file">
                             </div>
                         </div>
@@ -102,13 +135,13 @@
                             <div class="col-sm-10">
                                 <div class="radio">
                                     <label class="ui-check ui-check-md">
-                                        <input id="status1" class="has-value" checked="checked" name="status" type="radio" value="1">
+                                        <input id="status1" class="has-value" {{$category->status == 1 ?'checked' :'' }} name="status" type="radio" value="1">
                                         <i class="dark-white"></i>
                                         {{ trans('backLang.active') }}
                                     </label>
                                     &nbsp; &nbsp;
                                     <label class="ui-check ui-check-md">
-                                        <input id="status2" class="has-value" name="status" type="radio" value="0">
+                                        <input id="status2" class="has-value" name="status" {{$category->status == 0 ?'checked' :'' }} type="radio" value="0">
                                         <i class="dark-white"></i>
                                         {{ trans('backLang.notActive') }}
                                     </label>

@@ -9,6 +9,12 @@
         <!-- ############ PAGE START-->
         <div class="padding">
             <div class="box">
+                                @if(session()->has('message'))
+                    <div class="alert alert-success">
+                        {{ session()->get('message') }}
+                    </div>
+                @endif
+
                 <div class="box-header dker">
                     <h3>{{ trans('backLang.category_products') }}</h3>
                     <small>
@@ -59,6 +65,7 @@
                                     </label>
                                 </th>
                                 <th> {{ trans('backLang.name_category') }}</th>
+                               <th class="text-center" style="width:50px;">{{ trans('backLang.status') }}</th>
                                 <th class="text-center" style="width:200px;">{{ trans('backLang.options') }}</th>
                             </tr>
                             </thead>
@@ -70,11 +77,16 @@
                                         <input class="form-control row_no" name="row_ids[]" type="hidden" value="4">
                                     </label>
                                 </td>
-                                <td>
+                                
+                                     <td>
                                     <input class="form-control row_no" id="row_no" name="row_no_4" type="text" value="1">
                                     <i class="fa fa-amazon "></i>
-                                    {{$categor->name_en}}</td>
-
+                                    {{$categor->name_en}}
+                                    </td>
+                                    
+                                      <td class="text-center">
+                                    <i class="fa {{ ($categor->status==1) ? "fa-check text-success":"fa-times text-danger" }} inline"></i>
+                                      </td>
                                 <td class="text-center">
                                     <a class="btn btn-sm success" href="{{url('edit/category')}}/{{$categor->id}}">
                                         <small><i class="material-icons"></i> {{ trans('backLang.update') }}

@@ -214,6 +214,18 @@ $urlAfterRoot = substr($fullPagePath, strpos($fullPagePath, env('BACKEND_PATH'))
                         <small class="text-muted">{{ trans('backLang.siteData') }}</small>
                     </li>
 
+                            <li>
+                         <a href="{{url("users/reg")}}">
+                            <span class="nav-icon">
+                              <i class="material-icons"></i>
+                                </span>
+                                     <span class="nav-text">{{ trans('backLang.users') }}</span>
+                                    </a>
+                                </li>
+
+
+
+
                     <li class="">
                         <a>
                         <span class="nav-caret">
@@ -240,6 +252,12 @@ $urlAfterRoot = substr($fullPagePath, strpos($fullPagePath, env('BACKEND_PATH'))
                             <li class="">
                                 <a href="{{url('16/topics')}}">
                                     <span class="nav-text">{{ trans('backLang.style') }}</span>
+                                </a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="{{url('18/topics')}}">
+                                    <span class="nav-text">{{ trans('backLang.size') }}</span>
                                 </a>
                             </li>
 

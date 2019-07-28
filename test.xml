@@ -1,0 +1,2443 @@
+<ns2:AirlineOffers>
+    <ns2:AirlineOfferSnapshot>
+        <ns2:Highest>
+            <ns2:EncodedCurrencyPrice Code="SAR">831.00</ns2:EncodedCurrencyPrice>
+        </ns2:Highest>
+        <ns2:Lowest>
+            <ns2:EncodedCurrencyPrice Code="SAR">831.00</ns2:EncodedCurrencyPrice>
+        </ns2:Lowest>
+    </ns2:AirlineOfferSnapshot>
+    <ns2:Owner>1S</ns2:Owner>
+    <ns2:AirlineOffer refs="">
+        <ns2:OfferID Owner="SV" ObjectKey="SV-65">1S-SV-588-65</ns2:OfferID>
+        <ns2:TimeLimits>
+            <ns2:OfferExpiration DateTime="2019-07-22T12:32:21.842Z"></ns2:OfferExpiration>
+        </ns2:TimeLimits>
+        <ns2:TotalPrice>
+            <ns2:DetailCurrencyPrice>
+                <ns2:Total Code="SAR">831.00</ns2:Total>
+            </ns2:DetailCurrencyPrice>
+        </ns2:TotalPrice>
+        <ns2:Penalty RefundableInd="true">
+            <ns2:Details>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue></ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>300.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue></ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+            </ns2:Details>
+        </ns2:Penalty>
+        <ns2:PricedOffer>
+            <ns2:OfferPrice OfferItemID="1">
+                <ns2:RequestedDate>
+                    <ns2:PriceDetail>
+                        <ns2:TotalAmount>
+                            <ns2:DetailCurrencyPrice>
+                                <ns2:Total Code="SAR">831.00</ns2:Total>
+                                <ns2:Taxes>
+                                    <ns2:Total Code="SAR">151.00</ns2:Total>
+                                </ns2:Taxes>
+                            </ns2:DetailCurrencyPrice>
+                        </ns2:TotalAmount>
+                        <ns2:BaseAmount Code="SAR">680.00</ns2:BaseAmount>
+                        <ns2:Taxes>
+                            <ns2:Total Code="SAR">151.00</ns2:Total>
+                        </ns2:Taxes>
+                        <ns2:SegmentReferences OnPoint="JED" OffPoint="DXB">
+                            SEG-SV588-SV588-201907241215-201907241600-O
+                        </ns2:SegmentReferences>
+                    </ns2:PriceDetail>
+                    <ns2:Associations>
+                        <ns2:AssociatedTraveler>
+                            <ns2:TravelerReferences>PAX1</ns2:TravelerReferences>
+                        </ns2:AssociatedTraveler>
+                    </ns2:Associations>
+                </ns2:RequestedDate>
+                <ns2:FareDetail>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="JED" OFF_Point="DXB"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:PriceClassReference>Economy-Low</ns2:PriceClassReference>
+                </ns2:FareDetail>
+            </ns2:OfferPrice>
+            <ns2:Associations>
+                <ns2:ApplicableFlight>
+                    <ns2:FlightSegmentReference ref="SEG-SV588-SV588-201907241215-201907241600-O">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:OriginDestinationReferences>JEDDXB</ns2:OriginDestinationReferences>
+                    <ns2:FlightReferences>FL-SEG-SV588-SV588-201907241215-201907241600-O
+                    </ns2:FlightReferences>
+                </ns2:ApplicableFlight>
+            </ns2:Associations>
+        </ns2:PricedOffer>
+    </ns2:AirlineOffer>
+    <ns2:AirlineOffer refs="">
+        <ns2:OfferID Owner="SV" ObjectKey="SV-66">1S-SV-550-66</ns2:OfferID>
+        <ns2:TimeLimits>
+            <ns2:OfferExpiration DateTime="2019-07-22T12:32:21.842Z"></ns2:OfferExpiration>
+        </ns2:TimeLimits>
+        <ns2:TotalPrice>
+            <ns2:DetailCurrencyPrice>
+                <ns2:Total Code="SAR">831.00</ns2:Total>
+            </ns2:DetailCurrencyPrice>
+        </ns2:TotalPrice>
+        <ns2:Penalty RefundableInd="true">
+            <ns2:Details>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue></ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>300.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue></ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+            </ns2:Details>
+        </ns2:Penalty>
+        <ns2:PricedOffer>
+            <ns2:OfferPrice OfferItemID="1">
+                <ns2:RequestedDate>
+                    <ns2:PriceDetail>
+                        <ns2:TotalAmount>
+                            <ns2:DetailCurrencyPrice>
+                                <ns2:Total Code="SAR">831.00</ns2:Total>
+                                <ns2:Taxes>
+                                    <ns2:Total Code="SAR">151.00</ns2:Total>
+                                </ns2:Taxes>
+                            </ns2:DetailCurrencyPrice>
+                        </ns2:TotalAmount>
+                        <ns2:BaseAmount Code="SAR">680.00</ns2:BaseAmount>
+                        <ns2:Taxes>
+                            <ns2:Total Code="SAR">151.00</ns2:Total>
+                        </ns2:Taxes>
+                        <ns2:SegmentReferences OnPoint="JED" OffPoint="DXB">
+                            SEG-SV550-SV550-201907241545-201907241930-O
+                        </ns2:SegmentReferences>
+                    </ns2:PriceDetail>
+                    <ns2:Associations>
+                        <ns2:AssociatedTraveler>
+                            <ns2:TravelerReferences>PAX1</ns2:TravelerReferences>
+                        </ns2:AssociatedTraveler>
+                    </ns2:Associations>
+                </ns2:RequestedDate>
+                <ns2:FareDetail>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="JED" OFF_Point="DXB"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:PriceClassReference>Economy-Low</ns2:PriceClassReference>
+                </ns2:FareDetail>
+            </ns2:OfferPrice>
+            <ns2:Associations>
+                <ns2:ApplicableFlight>
+                    <ns2:FlightSegmentReference ref="SEG-SV550-SV550-201907241545-201907241930-O">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:OriginDestinationReferences>JEDDXB</ns2:OriginDestinationReferences>
+                    <ns2:FlightReferences>FL-SEG-SV550-SV550-201907241545-201907241930-O
+                    </ns2:FlightReferences>
+                </ns2:ApplicableFlight>
+            </ns2:Associations>
+        </ns2:PricedOffer>
+    </ns2:AirlineOffer>
+    <ns2:AirlineOffer refs="">
+        <ns2:OfferID Owner="SV" ObjectKey="SV-67">1S-SV-566-67</ns2:OfferID>
+        <ns2:TimeLimits>
+            <ns2:OfferExpiration DateTime="2019-07-22T12:32:21.843Z"></ns2:OfferExpiration>
+        </ns2:TimeLimits>
+        <ns2:TotalPrice>
+            <ns2:DetailCurrencyPrice>
+                <ns2:Total Code="SAR">831.00</ns2:Total>
+            </ns2:DetailCurrencyPrice>
+        </ns2:TotalPrice>
+        <ns2:Penalty RefundableInd="true">
+            <ns2:Details>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue></ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>300.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue></ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+            </ns2:Details>
+        </ns2:Penalty>
+        <ns2:PricedOffer>
+            <ns2:OfferPrice OfferItemID="1">
+                <ns2:RequestedDate>
+                    <ns2:PriceDetail>
+                        <ns2:TotalAmount>
+                            <ns2:DetailCurrencyPrice>
+                                <ns2:Total Code="SAR">831.00</ns2:Total>
+                                <ns2:Taxes>
+                                    <ns2:Total Code="SAR">151.00</ns2:Total>
+                                </ns2:Taxes>
+                            </ns2:DetailCurrencyPrice>
+                        </ns2:TotalAmount>
+                        <ns2:BaseAmount Code="SAR">680.00</ns2:BaseAmount>
+                        <ns2:Taxes>
+                            <ns2:Total Code="SAR">151.00</ns2:Total>
+                        </ns2:Taxes>
+                        <ns2:SegmentReferences OnPoint="JED" OffPoint="DXB">
+                            SEG-SV566-SV566-201907240655-201907241045-O
+                        </ns2:SegmentReferences>
+                    </ns2:PriceDetail>
+                    <ns2:Associations>
+                        <ns2:AssociatedTraveler>
+                            <ns2:TravelerReferences>PAX1</ns2:TravelerReferences>
+                        </ns2:AssociatedTraveler>
+                    </ns2:Associations>
+                </ns2:RequestedDate>
+                <ns2:FareDetail>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="JED" OFF_Point="DXB"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:PriceClassReference>Economy-Low</ns2:PriceClassReference>
+                </ns2:FareDetail>
+            </ns2:OfferPrice>
+            <ns2:Associations>
+                <ns2:ApplicableFlight>
+                    <ns2:FlightSegmentReference ref="SEG-SV566-SV566-201907240655-201907241045-O">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:OriginDestinationReferences>JEDDXB</ns2:OriginDestinationReferences>
+                    <ns2:FlightReferences>FL-SEG-SV566-SV566-201907240655-201907241045-O
+                    </ns2:FlightReferences>
+                </ns2:ApplicableFlight>
+            </ns2:Associations>
+        </ns2:PricedOffer>
+    </ns2:AirlineOffer>
+    <ns2:AirlineOffer refs="">
+        <ns2:OfferID Owner="SV" ObjectKey="SV-68">1S-SV-594-68</ns2:OfferID>
+        <ns2:TimeLimits>
+            <ns2:OfferExpiration DateTime="2019-07-22T12:32:21.843Z"></ns2:OfferExpiration>
+        </ns2:TimeLimits>
+        <ns2:TotalPrice>
+            <ns2:DetailCurrencyPrice>
+                <ns2:Total Code="SAR">831.00</ns2:Total>
+            </ns2:DetailCurrencyPrice>
+        </ns2:TotalPrice>
+        <ns2:Penalty RefundableInd="true">
+            <ns2:Details>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue></ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>300.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue></ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+            </ns2:Details>
+        </ns2:Penalty>
+        <ns2:PricedOffer>
+            <ns2:OfferPrice OfferItemID="1">
+                <ns2:RequestedDate>
+                    <ns2:PriceDetail>
+                        <ns2:TotalAmount>
+                            <ns2:DetailCurrencyPrice>
+                                <ns2:Total Code="SAR">831.00</ns2:Total>
+                                <ns2:Taxes>
+                                    <ns2:Total Code="SAR">151.00</ns2:Total>
+                                </ns2:Taxes>
+                            </ns2:DetailCurrencyPrice>
+                        </ns2:TotalAmount>
+                        <ns2:BaseAmount Code="SAR">680.00</ns2:BaseAmount>
+                        <ns2:Taxes>
+                            <ns2:Total Code="SAR">151.00</ns2:Total>
+                        </ns2:Taxes>
+                        <ns2:SegmentReferences OnPoint="JED" OffPoint="DXB">
+                            SEG-SV594-SV594-201907241735-201907242130-O
+                        </ns2:SegmentReferences>
+                    </ns2:PriceDetail>
+                    <ns2:Associations>
+                        <ns2:AssociatedTraveler>
+                            <ns2:TravelerReferences>PAX1</ns2:TravelerReferences>
+                        </ns2:AssociatedTraveler>
+                    </ns2:Associations>
+                </ns2:RequestedDate>
+                <ns2:FareDetail>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="JED" OFF_Point="DXB"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:PriceClassReference>Economy-Low</ns2:PriceClassReference>
+                </ns2:FareDetail>
+            </ns2:OfferPrice>
+            <ns2:Associations>
+                <ns2:ApplicableFlight>
+                    <ns2:FlightSegmentReference ref="SEG-SV594-SV594-201907241735-201907242130-O">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:OriginDestinationReferences>JEDDXB</ns2:OriginDestinationReferences>
+                    <ns2:FlightReferences>FL-SEG-SV594-SV594-201907241735-201907242130-O
+                    </ns2:FlightReferences>
+                </ns2:ApplicableFlight>
+            </ns2:Associations>
+        </ns2:PricedOffer>
+    </ns2:AirlineOffer>
+    <ns2:AirlineOffer refs="">
+        <ns2:OfferID Owner="SV" ObjectKey="SV-69">1S-SV-598-69</ns2:OfferID>
+        <ns2:TimeLimits>
+            <ns2:OfferExpiration DateTime="2019-07-22T12:32:21.843Z"></ns2:OfferExpiration>
+        </ns2:TimeLimits>
+        <ns2:TotalPrice>
+            <ns2:DetailCurrencyPrice>
+                <ns2:Total Code="SAR">831.00</ns2:Total>
+            </ns2:DetailCurrencyPrice>
+        </ns2:TotalPrice>
+        <ns2:Penalty RefundableInd="true">
+            <ns2:Details>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue></ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>300.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue></ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+            </ns2:Details>
+        </ns2:Penalty>
+        <ns2:PricedOffer>
+            <ns2:OfferPrice OfferItemID="1">
+                <ns2:RequestedDate>
+                    <ns2:PriceDetail>
+                        <ns2:TotalAmount>
+                            <ns2:DetailCurrencyPrice>
+                                <ns2:Total Code="SAR">831.00</ns2:Total>
+                                <ns2:Taxes>
+                                    <ns2:Total Code="SAR">151.00</ns2:Total>
+                                </ns2:Taxes>
+                            </ns2:DetailCurrencyPrice>
+                        </ns2:TotalAmount>
+                        <ns2:BaseAmount Code="SAR">680.00</ns2:BaseAmount>
+                        <ns2:Taxes>
+                            <ns2:Total Code="SAR">151.00</ns2:Total>
+                        </ns2:Taxes>
+                        <ns2:SegmentReferences OnPoint="JED" OffPoint="DXB">
+                            SEG-SV598-SV598-201907242305-201907250300-O
+                        </ns2:SegmentReferences>
+                    </ns2:PriceDetail>
+                    <ns2:Associations>
+                        <ns2:AssociatedTraveler>
+                            <ns2:TravelerReferences>PAX1</ns2:TravelerReferences>
+                        </ns2:AssociatedTraveler>
+                    </ns2:Associations>
+                </ns2:RequestedDate>
+                <ns2:FareDetail>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="JED" OFF_Point="DXB"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:PriceClassReference>Economy-Low</ns2:PriceClassReference>
+                </ns2:FareDetail>
+            </ns2:OfferPrice>
+            <ns2:Associations>
+                <ns2:ApplicableFlight>
+                    <ns2:FlightSegmentReference ref="SEG-SV598-SV598-201907242305-201907250300-O">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:OriginDestinationReferences>JEDDXB</ns2:OriginDestinationReferences>
+                    <ns2:FlightReferences>FL-SEG-SV598-SV598-201907242305-201907250300-O
+                    </ns2:FlightReferences>
+                </ns2:ApplicableFlight>
+            </ns2:Associations>
+        </ns2:PricedOffer>
+    </ns2:AirlineOffer>
+    <ns2:AirlineOffer refs="">
+        <ns2:OfferID Owner="SV" ObjectKey="SV-70">1S-SV-1116-70</ns2:OfferID>
+        <ns2:TimeLimits>
+            <ns2:OfferExpiration DateTime="2019-07-22T12:32:21.843Z"></ns2:OfferExpiration>
+        </ns2:TimeLimits>
+        <ns2:TotalPrice>
+            <ns2:DetailCurrencyPrice>
+                <ns2:Total Code="SAR">831.00</ns2:Total>
+            </ns2:DetailCurrencyPrice>
+        </ns2:TotalPrice>
+        <ns2:Penalty RefundableInd="true">
+            <ns2:Details>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>300.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>400.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+            </ns2:Details>
+        </ns2:Penalty>
+        <ns2:PricedOffer>
+            <ns2:OfferPrice OfferItemID="1">
+                <ns2:RequestedDate>
+                    <ns2:PriceDetail>
+                        <ns2:TotalAmount>
+                            <ns2:DetailCurrencyPrice>
+                                <ns2:Total Code="SAR">831.00</ns2:Total>
+                                <ns2:Taxes>
+                                    <ns2:Total Code="SAR">151.00</ns2:Total>
+                                </ns2:Taxes>
+                            </ns2:DetailCurrencyPrice>
+                        </ns2:TotalAmount>
+                        <ns2:BaseAmount Code="SAR">680.00</ns2:BaseAmount>
+                        <ns2:Taxes>
+                            <ns2:Total Code="SAR">151.00</ns2:Total>
+                        </ns2:Taxes>
+                        <ns2:SegmentReferences OnPoint="JED" OffPoint="DXB">
+                            SEG-SV1116-SV1116-201907241300-201907241500-O
+                            SEG-SV556-SV556-201907241620-201907241845-I
+                        </ns2:SegmentReferences>
+                    </ns2:PriceDetail>
+                    <ns2:Associations>
+                        <ns2:AssociatedTraveler>
+                            <ns2:TravelerReferences>PAX1</ns2:TravelerReferences>
+                        </ns2:AssociatedTraveler>
+                    </ns2:Associations>
+                </ns2:RequestedDate>
+                <ns2:FareDetail>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="JED" OFF_Point="DMM"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="DMM" OFF_Point="DXB"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:PriceClassReference>Economy-Low</ns2:PriceClassReference>
+                </ns2:FareDetail>
+            </ns2:OfferPrice>
+            <ns2:Associations>
+                <ns2:ApplicableFlight>
+                    <ns2:FlightSegmentReference ref="SEG-SV1116-SV1116-201907241300-201907241500-O">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:FlightSegmentReference ref="SEG-SV556-SV556-201907241620-201907241845-I">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>1</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:OriginDestinationReferences>JEDDXB</ns2:OriginDestinationReferences>
+                    <ns2:FlightReferences>
+                        FL-SEG-SV1116-SV1116-201907241300-201907241500-OSEG-SV556-SV556-201907241620-201907241845-I
+                    </ns2:FlightReferences>
+                </ns2:ApplicableFlight>
+            </ns2:Associations>
+        </ns2:PricedOffer>
+    </ns2:AirlineOffer>
+    <ns2:AirlineOffer refs="">
+        <ns2:OfferID Owner="SV" ObjectKey="SV-71">1S-SV-1102-71</ns2:OfferID>
+        <ns2:TimeLimits>
+            <ns2:OfferExpiration DateTime="2019-07-22T12:32:21.844Z"></ns2:OfferExpiration>
+        </ns2:TimeLimits>
+        <ns2:TotalPrice>
+            <ns2:DetailCurrencyPrice>
+                <ns2:Total Code="SAR">831.00</ns2:Total>
+            </ns2:DetailCurrencyPrice>
+        </ns2:TotalPrice>
+        <ns2:Penalty RefundableInd="true">
+            <ns2:Details>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>300.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>400.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+            </ns2:Details>
+        </ns2:Penalty>
+        <ns2:PricedOffer>
+            <ns2:OfferPrice OfferItemID="1">
+                <ns2:RequestedDate>
+                    <ns2:PriceDetail>
+                        <ns2:TotalAmount>
+                            <ns2:DetailCurrencyPrice>
+                                <ns2:Total Code="SAR">831.00</ns2:Total>
+                                <ns2:Taxes>
+                                    <ns2:Total Code="SAR">151.00</ns2:Total>
+                                </ns2:Taxes>
+                            </ns2:DetailCurrencyPrice>
+                        </ns2:TotalAmount>
+                        <ns2:BaseAmount Code="SAR">680.00</ns2:BaseAmount>
+                        <ns2:Taxes>
+                            <ns2:Total Code="SAR">151.00</ns2:Total>
+                        </ns2:Taxes>
+                        <ns2:SegmentReferences OnPoint="JED" OffPoint="DXB">
+                            SEG-SV1102-SV1102-201907240500-201907240700-O
+                            SEG-SV568-SV568-201907240930-201907241155-I
+                        </ns2:SegmentReferences>
+                    </ns2:PriceDetail>
+                    <ns2:Associations>
+                        <ns2:AssociatedTraveler>
+                            <ns2:TravelerReferences>PAX1</ns2:TravelerReferences>
+                        </ns2:AssociatedTraveler>
+                    </ns2:Associations>
+                </ns2:RequestedDate>
+                <ns2:FareDetail>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="JED" OFF_Point="DMM"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="DMM" OFF_Point="DXB"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:PriceClassReference>Economy-Low</ns2:PriceClassReference>
+                </ns2:FareDetail>
+            </ns2:OfferPrice>
+            <ns2:Associations>
+                <ns2:ApplicableFlight>
+                    <ns2:FlightSegmentReference ref="SEG-SV1102-SV1102-201907240500-201907240700-O">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:FlightSegmentReference ref="SEG-SV568-SV568-201907240930-201907241155-I">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>1</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:OriginDestinationReferences>JEDDXB</ns2:OriginDestinationReferences>
+                    <ns2:FlightReferences>
+                        FL-SEG-SV1102-SV1102-201907240500-201907240700-OSEG-SV568-SV568-201907240930-201907241155-I
+                    </ns2:FlightReferences>
+                </ns2:ApplicableFlight>
+            </ns2:Associations>
+        </ns2:PricedOffer>
+    </ns2:AirlineOffer>
+    <ns2:AirlineOffer refs="">
+        <ns2:OfferID Owner="SV" ObjectKey="SV-72">1S-SV-1030-72</ns2:OfferID>
+        <ns2:TimeLimits>
+            <ns2:OfferExpiration DateTime="2019-07-22T12:32:21.844Z"></ns2:OfferExpiration>
+        </ns2:TimeLimits>
+        <ns2:TotalPrice>
+            <ns2:DetailCurrencyPrice>
+                <ns2:Total Code="SAR">831.00</ns2:Total>
+            </ns2:DetailCurrencyPrice>
+        </ns2:TotalPrice>
+        <ns2:Penalty RefundableInd="true">
+            <ns2:Details>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>300.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>400.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+            </ns2:Details>
+        </ns2:Penalty>
+        <ns2:PricedOffer>
+            <ns2:OfferPrice OfferItemID="1">
+                <ns2:RequestedDate>
+                    <ns2:PriceDetail>
+                        <ns2:TotalAmount>
+                            <ns2:DetailCurrencyPrice>
+                                <ns2:Total Code="SAR">831.00</ns2:Total>
+                                <ns2:Taxes>
+                                    <ns2:Total Code="SAR">151.00</ns2:Total>
+                                </ns2:Taxes>
+                            </ns2:DetailCurrencyPrice>
+                        </ns2:TotalAmount>
+                        <ns2:BaseAmount Code="SAR">680.00</ns2:BaseAmount>
+                        <ns2:Taxes>
+                            <ns2:Total Code="SAR">151.00</ns2:Total>
+                        </ns2:Taxes>
+                        <ns2:SegmentReferences OnPoint="JED" OffPoint="DXB">
+                            SEG-SV1030-SV1030-201907241200-201907241330-O
+                            SEG-SV560-SV560-201907241605-201907241900-I
+                        </ns2:SegmentReferences>
+                    </ns2:PriceDetail>
+                    <ns2:Associations>
+                        <ns2:AssociatedTraveler>
+                            <ns2:TravelerReferences>PAX1</ns2:TravelerReferences>
+                        </ns2:AssociatedTraveler>
+                    </ns2:Associations>
+                </ns2:RequestedDate>
+                <ns2:FareDetail>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="JED" OFF_Point="RUH"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="RUH" OFF_Point="DXB"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:PriceClassReference>Economy-Low</ns2:PriceClassReference>
+                </ns2:FareDetail>
+            </ns2:OfferPrice>
+            <ns2:Associations>
+                <ns2:ApplicableFlight>
+                    <ns2:FlightSegmentReference ref="SEG-SV1030-SV1030-201907241200-201907241330-O">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:FlightSegmentReference ref="SEG-SV560-SV560-201907241605-201907241900-I">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>1</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:OriginDestinationReferences>JEDDXB</ns2:OriginDestinationReferences>
+                    <ns2:FlightReferences>
+                        FL-SEG-SV1030-SV1030-201907241200-201907241330-OSEG-SV560-SV560-201907241605-201907241900-I
+                    </ns2:FlightReferences>
+                </ns2:ApplicableFlight>
+            </ns2:Associations>
+        </ns2:PricedOffer>
+    </ns2:AirlineOffer>
+    <ns2:AirlineOffer refs="">
+        <ns2:OfferID Owner="SV" ObjectKey="SV-73">1S-SV-1020-73</ns2:OfferID>
+        <ns2:TimeLimits>
+            <ns2:OfferExpiration DateTime="2019-07-22T12:32:21.844Z"></ns2:OfferExpiration>
+        </ns2:TimeLimits>
+        <ns2:TotalPrice>
+            <ns2:DetailCurrencyPrice>
+                <ns2:Total Code="SAR">831.00</ns2:Total>
+            </ns2:DetailCurrencyPrice>
+        </ns2:TotalPrice>
+        <ns2:Penalty RefundableInd="true">
+            <ns2:Details>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>300.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>400.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+            </ns2:Details>
+        </ns2:Penalty>
+        <ns2:PricedOffer>
+            <ns2:OfferPrice OfferItemID="1">
+                <ns2:RequestedDate>
+                    <ns2:PriceDetail>
+                        <ns2:TotalAmount>
+                            <ns2:DetailCurrencyPrice>
+                                <ns2:Total Code="SAR">831.00</ns2:Total>
+                                <ns2:Taxes>
+                                    <ns2:Total Code="SAR">151.00</ns2:Total>
+                                </ns2:Taxes>
+                            </ns2:DetailCurrencyPrice>
+                        </ns2:TotalAmount>
+                        <ns2:BaseAmount Code="SAR">680.00</ns2:BaseAmount>
+                        <ns2:Taxes>
+                            <ns2:Total Code="SAR">151.00</ns2:Total>
+                        </ns2:Taxes>
+                        <ns2:SegmentReferences OnPoint="JED" OffPoint="DXB">
+                            SEG-SV1020-SV1020-201907240700-201907240840-O
+                            SEG-SV558-SV558-201907241135-201907241430-I
+                        </ns2:SegmentReferences>
+                    </ns2:PriceDetail>
+                    <ns2:Associations>
+                        <ns2:AssociatedTraveler>
+                            <ns2:TravelerReferences>PAX1</ns2:TravelerReferences>
+                        </ns2:AssociatedTraveler>
+                    </ns2:Associations>
+                </ns2:RequestedDate>
+                <ns2:FareDetail>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="JED" OFF_Point="RUH"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="RUH" OFF_Point="DXB"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:PriceClassReference>Economy-Low</ns2:PriceClassReference>
+                </ns2:FareDetail>
+            </ns2:OfferPrice>
+            <ns2:Associations>
+                <ns2:ApplicableFlight>
+                    <ns2:FlightSegmentReference ref="SEG-SV1020-SV1020-201907240700-201907240840-O">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:FlightSegmentReference ref="SEG-SV558-SV558-201907241135-201907241430-I">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>1</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:OriginDestinationReferences>JEDDXB</ns2:OriginDestinationReferences>
+                    <ns2:FlightReferences>
+                        FL-SEG-SV1020-SV1020-201907240700-201907240840-OSEG-SV558-SV558-201907241135-201907241430-I
+                    </ns2:FlightReferences>
+                </ns2:ApplicableFlight>
+            </ns2:Associations>
+        </ns2:PricedOffer>
+    </ns2:AirlineOffer>
+    <ns2:AirlineOffer refs="">
+        <ns2:OfferID Owner="SV" ObjectKey="SV-74">1S-SV-1024-74</ns2:OfferID>
+        <ns2:TimeLimits>
+            <ns2:OfferExpiration DateTime="2019-07-22T12:32:21.844Z"></ns2:OfferExpiration>
+        </ns2:TimeLimits>
+        <ns2:TotalPrice>
+            <ns2:DetailCurrencyPrice>
+                <ns2:Total Code="SAR">831.00</ns2:Total>
+            </ns2:DetailCurrencyPrice>
+        </ns2:TotalPrice>
+        <ns2:Penalty RefundableInd="true">
+            <ns2:Details>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>300.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>400.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+            </ns2:Details>
+        </ns2:Penalty>
+        <ns2:PricedOffer>
+            <ns2:OfferPrice OfferItemID="1">
+                <ns2:RequestedDate>
+                    <ns2:PriceDetail>
+                        <ns2:TotalAmount>
+                            <ns2:DetailCurrencyPrice>
+                                <ns2:Total Code="SAR">831.00</ns2:Total>
+                                <ns2:Taxes>
+                                    <ns2:Total Code="SAR">151.00</ns2:Total>
+                                </ns2:Taxes>
+                            </ns2:DetailCurrencyPrice>
+                        </ns2:TotalAmount>
+                        <ns2:BaseAmount Code="SAR">680.00</ns2:BaseAmount>
+                        <ns2:Taxes>
+                            <ns2:Total Code="SAR">151.00</ns2:Total>
+                        </ns2:Taxes>
+                        <ns2:SegmentReferences OnPoint="JED" OffPoint="DXB">
+                            SEG-SV1024-SV1024-201907240900-201907241040-O
+                            SEG-SV554-SV554-201907241345-201907241645-I
+                        </ns2:SegmentReferences>
+                    </ns2:PriceDetail>
+                    <ns2:Associations>
+                        <ns2:AssociatedTraveler>
+                            <ns2:TravelerReferences>PAX1</ns2:TravelerReferences>
+                        </ns2:AssociatedTraveler>
+                    </ns2:Associations>
+                </ns2:RequestedDate>
+                <ns2:FareDetail>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="JED" OFF_Point="RUH"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="RUH" OFF_Point="DXB"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:PriceClassReference>Economy-Low</ns2:PriceClassReference>
+                </ns2:FareDetail>
+            </ns2:OfferPrice>
+            <ns2:Associations>
+                <ns2:ApplicableFlight>
+                    <ns2:FlightSegmentReference ref="SEG-SV1024-SV1024-201907240900-201907241040-O">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:FlightSegmentReference ref="SEG-SV554-SV554-201907241345-201907241645-I">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>1</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:OriginDestinationReferences>JEDDXB</ns2:OriginDestinationReferences>
+                    <ns2:FlightReferences>
+                        FL-SEG-SV1024-SV1024-201907240900-201907241040-OSEG-SV554-SV554-201907241345-201907241645-I
+                    </ns2:FlightReferences>
+                </ns2:ApplicableFlight>
+            </ns2:Associations>
+        </ns2:PricedOffer>
+    </ns2:AirlineOffer>
+    <ns2:AirlineOffer refs="">
+        <ns2:OfferID Owner="SV" ObjectKey="SV-75">1S-SV-1114-75</ns2:OfferID>
+        <ns2:TimeLimits>
+            <ns2:OfferExpiration DateTime="2019-07-22T12:32:21.845Z"></ns2:OfferExpiration>
+        </ns2:TimeLimits>
+        <ns2:TotalPrice>
+            <ns2:DetailCurrencyPrice>
+                <ns2:Total Code="SAR">831.00</ns2:Total>
+            </ns2:DetailCurrencyPrice>
+        </ns2:TotalPrice>
+        <ns2:Penalty RefundableInd="true">
+            <ns2:Details>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>300.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>400.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+            </ns2:Details>
+        </ns2:Penalty>
+        <ns2:PricedOffer>
+            <ns2:OfferPrice OfferItemID="1">
+                <ns2:RequestedDate>
+                    <ns2:PriceDetail>
+                        <ns2:TotalAmount>
+                            <ns2:DetailCurrencyPrice>
+                                <ns2:Total Code="SAR">831.00</ns2:Total>
+                                <ns2:Taxes>
+                                    <ns2:Total Code="SAR">151.00</ns2:Total>
+                                </ns2:Taxes>
+                            </ns2:DetailCurrencyPrice>
+                        </ns2:TotalAmount>
+                        <ns2:BaseAmount Code="SAR">680.00</ns2:BaseAmount>
+                        <ns2:Taxes>
+                            <ns2:Total Code="SAR">151.00</ns2:Total>
+                        </ns2:Taxes>
+                        <ns2:SegmentReferences OnPoint="JED" OffPoint="DXB">
+                            SEG-SV1114-SV1114-201907241100-201907241300-O
+                            SEG-SV556-SV556-201907241620-201907241845-I
+                        </ns2:SegmentReferences>
+                    </ns2:PriceDetail>
+                    <ns2:Associations>
+                        <ns2:AssociatedTraveler>
+                            <ns2:TravelerReferences>PAX1</ns2:TravelerReferences>
+                        </ns2:AssociatedTraveler>
+                    </ns2:Associations>
+                </ns2:RequestedDate>
+                <ns2:FareDetail>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="JED" OFF_Point="DMM"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="DMM" OFF_Point="DXB"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:PriceClassReference>Economy-Low</ns2:PriceClassReference>
+                </ns2:FareDetail>
+            </ns2:OfferPrice>
+            <ns2:Associations>
+                <ns2:ApplicableFlight>
+                    <ns2:FlightSegmentReference ref="SEG-SV1114-SV1114-201907241100-201907241300-O">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:FlightSegmentReference ref="SEG-SV556-SV556-201907241620-201907241845-I">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>1</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:OriginDestinationReferences>JEDDXB</ns2:OriginDestinationReferences>
+                    <ns2:FlightReferences>
+                        FL-SEG-SV1114-SV1114-201907241100-201907241300-OSEG-SV556-SV556-201907241620-201907241845-I
+                    </ns2:FlightReferences>
+                </ns2:ApplicableFlight>
+            </ns2:Associations>
+        </ns2:PricedOffer>
+    </ns2:AirlineOffer>
+    <ns2:AirlineOffer refs="">
+        <ns2:OfferID Owner="SV" ObjectKey="SV-76">1S-SV-1028-76</ns2:OfferID>
+        <ns2:TimeLimits>
+            <ns2:OfferExpiration DateTime="2019-07-22T12:32:21.845Z"></ns2:OfferExpiration>
+        </ns2:TimeLimits>
+        <ns2:TotalPrice>
+            <ns2:DetailCurrencyPrice>
+                <ns2:Total Code="SAR">831.00</ns2:Total>
+            </ns2:DetailCurrencyPrice>
+        </ns2:TotalPrice>
+        <ns2:Penalty RefundableInd="true">
+            <ns2:Details>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>300.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>400.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+            </ns2:Details>
+        </ns2:Penalty>
+        <ns2:PricedOffer>
+            <ns2:OfferPrice OfferItemID="1">
+                <ns2:RequestedDate>
+                    <ns2:PriceDetail>
+                        <ns2:TotalAmount>
+                            <ns2:DetailCurrencyPrice>
+                                <ns2:Total Code="SAR">831.00</ns2:Total>
+                                <ns2:Taxes>
+                                    <ns2:Total Code="SAR">151.00</ns2:Total>
+                                </ns2:Taxes>
+                            </ns2:DetailCurrencyPrice>
+                        </ns2:TotalAmount>
+                        <ns2:BaseAmount Code="SAR">680.00</ns2:BaseAmount>
+                        <ns2:Taxes>
+                            <ns2:Total Code="SAR">151.00</ns2:Total>
+                        </ns2:Taxes>
+                        <ns2:SegmentReferences OnPoint="JED" OffPoint="DXB">
+                            SEG-SV1028-SV1028-201907241100-201907241230-O
+                            SEG-SV560-SV560-201907241605-201907241900-I
+                        </ns2:SegmentReferences>
+                    </ns2:PriceDetail>
+                    <ns2:Associations>
+                        <ns2:AssociatedTraveler>
+                            <ns2:TravelerReferences>PAX1</ns2:TravelerReferences>
+                        </ns2:AssociatedTraveler>
+                    </ns2:Associations>
+                </ns2:RequestedDate>
+                <ns2:FareDetail>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="JED" OFF_Point="RUH"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="RUH" OFF_Point="DXB"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:PriceClassReference>Economy-Low</ns2:PriceClassReference>
+                </ns2:FareDetail>
+            </ns2:OfferPrice>
+            <ns2:Associations>
+                <ns2:ApplicableFlight>
+                    <ns2:FlightSegmentReference ref="SEG-SV1028-SV1028-201907241100-201907241230-O">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:FlightSegmentReference ref="SEG-SV560-SV560-201907241605-201907241900-I">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>1</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:OriginDestinationReferences>JEDDXB</ns2:OriginDestinationReferences>
+                    <ns2:FlightReferences>
+                        FL-SEG-SV1028-SV1028-201907241100-201907241230-OSEG-SV560-SV560-201907241605-201907241900-I
+                    </ns2:FlightReferences>
+                </ns2:ApplicableFlight>
+            </ns2:Associations>
+        </ns2:PricedOffer>
+    </ns2:AirlineOffer>
+    <ns2:AirlineOffer refs="">
+        <ns2:OfferID Owner="SV" ObjectKey="SV-77">1S-SV-1018-77</ns2:OfferID>
+        <ns2:TimeLimits>
+            <ns2:OfferExpiration DateTime="2019-07-22T12:32:21.845Z"></ns2:OfferExpiration>
+        </ns2:TimeLimits>
+        <ns2:TotalPrice>
+            <ns2:DetailCurrencyPrice>
+                <ns2:Total Code="SAR">831.00</ns2:Total>
+            </ns2:DetailCurrencyPrice>
+        </ns2:TotalPrice>
+        <ns2:Penalty RefundableInd="true">
+            <ns2:Details>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>300.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>400.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+            </ns2:Details>
+        </ns2:Penalty>
+        <ns2:PricedOffer>
+            <ns2:OfferPrice OfferItemID="1">
+                <ns2:RequestedDate>
+                    <ns2:PriceDetail>
+                        <ns2:TotalAmount>
+                            <ns2:DetailCurrencyPrice>
+                                <ns2:Total Code="SAR">831.00</ns2:Total>
+                                <ns2:Taxes>
+                                    <ns2:Total Code="SAR">151.00</ns2:Total>
+                                </ns2:Taxes>
+                            </ns2:DetailCurrencyPrice>
+                        </ns2:TotalAmount>
+                        <ns2:BaseAmount Code="SAR">680.00</ns2:BaseAmount>
+                        <ns2:Taxes>
+                            <ns2:Total Code="SAR">151.00</ns2:Total>
+                        </ns2:Taxes>
+                        <ns2:SegmentReferences OnPoint="JED" OffPoint="DXB">
+                            SEG-SV1018-SV1018-201907240600-201907240740-O
+                            SEG-SV558-SV558-201907241135-201907241430-I
+                        </ns2:SegmentReferences>
+                    </ns2:PriceDetail>
+                    <ns2:Associations>
+                        <ns2:AssociatedTraveler>
+                            <ns2:TravelerReferences>PAX1</ns2:TravelerReferences>
+                        </ns2:AssociatedTraveler>
+                    </ns2:Associations>
+                </ns2:RequestedDate>
+                <ns2:FareDetail>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="JED" OFF_Point="RUH"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="RUH" OFF_Point="DXB"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:PriceClassReference>Economy-Low</ns2:PriceClassReference>
+                </ns2:FareDetail>
+            </ns2:OfferPrice>
+            <ns2:Associations>
+                <ns2:ApplicableFlight>
+                    <ns2:FlightSegmentReference ref="SEG-SV1018-SV1018-201907240600-201907240740-O">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:FlightSegmentReference ref="SEG-SV558-SV558-201907241135-201907241430-I">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>1</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:OriginDestinationReferences>JEDDXB</ns2:OriginDestinationReferences>
+                    <ns2:FlightReferences>
+                        FL-SEG-SV1018-SV1018-201907240600-201907240740-OSEG-SV558-SV558-201907241135-201907241430-I
+                    </ns2:FlightReferences>
+                </ns2:ApplicableFlight>
+            </ns2:Associations>
+        </ns2:PricedOffer>
+    </ns2:AirlineOffer>
+    <ns2:AirlineOffer refs="">
+        <ns2:OfferID Owner="SV" ObjectKey="SV-78">1S-SV-1022-78</ns2:OfferID>
+        <ns2:TimeLimits>
+            <ns2:OfferExpiration DateTime="2019-07-22T12:32:21.846Z"></ns2:OfferExpiration>
+        </ns2:TimeLimits>
+        <ns2:TotalPrice>
+            <ns2:DetailCurrencyPrice>
+                <ns2:Total Code="SAR">831.00</ns2:Total>
+            </ns2:DetailCurrencyPrice>
+        </ns2:TotalPrice>
+        <ns2:Penalty RefundableInd="true">
+            <ns2:Details>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>300.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>400.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+            </ns2:Details>
+        </ns2:Penalty>
+        <ns2:PricedOffer>
+            <ns2:OfferPrice OfferItemID="1">
+                <ns2:RequestedDate>
+                    <ns2:PriceDetail>
+                        <ns2:TotalAmount>
+                            <ns2:DetailCurrencyPrice>
+                                <ns2:Total Code="SAR">831.00</ns2:Total>
+                                <ns2:Taxes>
+                                    <ns2:Total Code="SAR">151.00</ns2:Total>
+                                </ns2:Taxes>
+                            </ns2:DetailCurrencyPrice>
+                        </ns2:TotalAmount>
+                        <ns2:BaseAmount Code="SAR">680.00</ns2:BaseAmount>
+                        <ns2:Taxes>
+                            <ns2:Total Code="SAR">151.00</ns2:Total>
+                        </ns2:Taxes>
+                        <ns2:SegmentReferences OnPoint="JED" OffPoint="DXB">
+                            SEG-SV1022-SV1022-201907240800-201907240940-O
+                            SEG-SV554-SV554-201907241345-201907241645-I
+                        </ns2:SegmentReferences>
+                    </ns2:PriceDetail>
+                    <ns2:Associations>
+                        <ns2:AssociatedTraveler>
+                            <ns2:TravelerReferences>PAX1</ns2:TravelerReferences>
+                        </ns2:AssociatedTraveler>
+                    </ns2:Associations>
+                </ns2:RequestedDate>
+                <ns2:FareDetail>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="JED" OFF_Point="RUH"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="RUH" OFF_Point="DXB"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:PriceClassReference>Economy-Low</ns2:PriceClassReference>
+                </ns2:FareDetail>
+            </ns2:OfferPrice>
+            <ns2:Associations>
+                <ns2:ApplicableFlight>
+                    <ns2:FlightSegmentReference ref="SEG-SV1022-SV1022-201907240800-201907240940-O">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:FlightSegmentReference ref="SEG-SV554-SV554-201907241345-201907241645-I">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>1</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:OriginDestinationReferences>JEDDXB</ns2:OriginDestinationReferences>
+                    <ns2:FlightReferences>
+                        FL-SEG-SV1022-SV1022-201907240800-201907240940-OSEG-SV554-SV554-201907241345-201907241645-I
+                    </ns2:FlightReferences>
+                </ns2:ApplicableFlight>
+            </ns2:Associations>
+        </ns2:PricedOffer>
+    </ns2:AirlineOffer>
+    <ns2:AirlineOffer refs="">
+        <ns2:OfferID Owner="SV" ObjectKey="SV-79">1S-SV-1026-79</ns2:OfferID>
+        <ns2:TimeLimits>
+            <ns2:OfferExpiration DateTime="2019-07-22T12:32:21.846Z"></ns2:OfferExpiration>
+        </ns2:TimeLimits>
+        <ns2:TotalPrice>
+            <ns2:DetailCurrencyPrice>
+                <ns2:Total Code="SAR">831.00</ns2:Total>
+            </ns2:DetailCurrencyPrice>
+        </ns2:TotalPrice>
+        <ns2:Penalty RefundableInd="true">
+            <ns2:Details>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>300.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>400.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+            </ns2:Details>
+        </ns2:Penalty>
+        <ns2:PricedOffer>
+            <ns2:OfferPrice OfferItemID="1">
+                <ns2:RequestedDate>
+                    <ns2:PriceDetail>
+                        <ns2:TotalAmount>
+                            <ns2:DetailCurrencyPrice>
+                                <ns2:Total Code="SAR">831.00</ns2:Total>
+                                <ns2:Taxes>
+                                    <ns2:Total Code="SAR">151.00</ns2:Total>
+                                </ns2:Taxes>
+                            </ns2:DetailCurrencyPrice>
+                        </ns2:TotalAmount>
+                        <ns2:BaseAmount Code="SAR">680.00</ns2:BaseAmount>
+                        <ns2:Taxes>
+                            <ns2:Total Code="SAR">151.00</ns2:Total>
+                        </ns2:Taxes>
+                        <ns2:SegmentReferences OnPoint="JED" OffPoint="DXB">
+                            SEG-SV1026-SV1026-201907241000-201907241140-O
+                            SEG-SV560-SV560-201907241605-201907241900-I
+                        </ns2:SegmentReferences>
+                    </ns2:PriceDetail>
+                    <ns2:Associations>
+                        <ns2:AssociatedTraveler>
+                            <ns2:TravelerReferences>PAX1</ns2:TravelerReferences>
+                        </ns2:AssociatedTraveler>
+                    </ns2:Associations>
+                </ns2:RequestedDate>
+                <ns2:FareDetail>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="JED" OFF_Point="RUH"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="RUH" OFF_Point="DXB"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:PriceClassReference>Economy-Low</ns2:PriceClassReference>
+                </ns2:FareDetail>
+            </ns2:OfferPrice>
+            <ns2:Associations>
+                <ns2:ApplicableFlight>
+                    <ns2:FlightSegmentReference ref="SEG-SV1026-SV1026-201907241000-201907241140-O">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:FlightSegmentReference ref="SEG-SV560-SV560-201907241605-201907241900-I">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>1</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:OriginDestinationReferences>JEDDXB</ns2:OriginDestinationReferences>
+                    <ns2:FlightReferences>
+                        FL-SEG-SV1026-SV1026-201907241000-201907241140-OSEG-SV560-SV560-201907241605-201907241900-I
+                    </ns2:FlightReferences>
+                </ns2:ApplicableFlight>
+            </ns2:Associations>
+        </ns2:PricedOffer>
+    </ns2:AirlineOffer>
+    <ns2:AirlineOffer refs="">
+        <ns2:OfferID Owner="SV" ObjectKey="SV-80">1S-SV-1056-80</ns2:OfferID>
+        <ns2:TimeLimits>
+            <ns2:OfferExpiration DateTime="2019-07-22T12:32:21.846Z"></ns2:OfferExpiration>
+        </ns2:TimeLimits>
+        <ns2:TotalPrice>
+            <ns2:DetailCurrencyPrice>
+                <ns2:Total Code="SAR">831.00</ns2:Total>
+            </ns2:DetailCurrencyPrice>
+        </ns2:TotalPrice>
+        <ns2:Penalty RefundableInd="true">
+            <ns2:Details>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Exchange/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/Before departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>300.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+                <ns2:Detail>
+                    <ns2:Type>Refund/After departure/ADT</ns2:Type>
+                    <ns2:Amounts>
+                        <ns2:Amount>
+                            <ns2:CurrencyAmountValue>400.00</ns2:CurrencyAmountValue>
+                        </ns2:Amount>
+                    </ns2:Amounts>
+                </ns2:Detail>
+            </ns2:Details>
+        </ns2:Penalty>
+        <ns2:PricedOffer>
+            <ns2:OfferPrice OfferItemID="1">
+                <ns2:RequestedDate>
+                    <ns2:PriceDetail>
+                        <ns2:TotalAmount>
+                            <ns2:DetailCurrencyPrice>
+                                <ns2:Total Code="SAR">831.00</ns2:Total>
+                                <ns2:Taxes>
+                                    <ns2:Total Code="SAR">151.00</ns2:Total>
+                                </ns2:Taxes>
+                            </ns2:DetailCurrencyPrice>
+                        </ns2:TotalAmount>
+                        <ns2:BaseAmount Code="SAR">680.00</ns2:BaseAmount>
+                        <ns2:Taxes>
+                            <ns2:Total Code="SAR">151.00</ns2:Total>
+                        </ns2:Taxes>
+                        <ns2:SegmentReferences OnPoint="JED" OffPoint="DXB">
+                            SEG-SV1056-SV1056-201907240305-201907240440-O
+                            SEG-SV596-SV596-201907240920-201907241220-I
+                        </ns2:SegmentReferences>
+                    </ns2:PriceDetail>
+                    <ns2:Associations>
+                        <ns2:AssociatedTraveler>
+                            <ns2:TravelerReferences>PAX1</ns2:TravelerReferences>
+                        </ns2:AssociatedTraveler>
+                    </ns2:Associations>
+                </ns2:RequestedDate>
+                <ns2:FareDetail>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="JED" OFF_Point="RUH"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:FareComponent refs="TLXOWSA-T">
+                        <ns2:SegmentReference ON_Point="RUH" OFF_Point="DXB"></ns2:SegmentReference>
+                    </ns2:FareComponent>
+                    <ns2:PriceClassReference>Economy-Low</ns2:PriceClassReference>
+                </ns2:FareDetail>
+            </ns2:OfferPrice>
+            <ns2:Associations>
+                <ns2:ApplicableFlight>
+                    <ns2:FlightSegmentReference ref="SEG-SV1056-SV1056-201907240305-201907240440-O">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:FlightSegmentReference ref="SEG-SV596-SV596-201907240920-201907241220-I">
+                        <ns2:Cabin>
+                            <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:Cabin>
+                        <ns2:ClassOfService>
+                            <ns2:Code SeatsLeft="9">T</ns2:Code>
+                            <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                        </ns2:ClassOfService>
+                        <ns2:BagDetailAssociation>
+                            <ns2:CheckedBagReferences>PI-2</ns2:CheckedBagReferences>
+                        </ns2:BagDetailAssociation>
+                        <ns2:MarriedSegmentGroup>1</ns2:MarriedSegmentGroup>
+                    </ns2:FlightSegmentReference>
+                    <ns2:OriginDestinationReferences>JEDDXB</ns2:OriginDestinationReferences>
+                    <ns2:FlightReferences>
+                        FL-SEG-SV1056-SV1056-201907240305-201907240440-OSEG-SV596-SV596-201907240920-201907241220-I
+                    </ns2:FlightReferences>
+                </ns2:ApplicableFlight>
+            </ns2:Associations>
+        </ns2:PricedOffer>
+    </ns2:AirlineOffer>
+</ns2:AirlineOffers>
+<ns2:AirlineOffers>
+<ns2:AirlineOfferSnapshot>
+    <ns2:Highest>
+        <ns2:EncodedCurrencyPrice Code="SAR">943.00</ns2:EncodedCurrencyPrice>
+    </ns2:Highest>
+    <ns2:Lowest>
+        <ns2:EncodedCurrencyPrice Code="SAR">943.00</ns2:EncodedCurrencyPrice>
+    </ns2:Lowest>
+</ns2:AirlineOfferSnapshot>
+<ns2:Owner>1S</ns2:Owner>
+<ns2:AirlineOffer refs="">
+    <ns2:OfferID Owner="ME" ObjectKey="ME-106">1S-ME-365-106</ns2:OfferID>
+    <ns2:TimeLimits>
+        <ns2:OfferExpiration DateTime="2019-07-22T12:32:21.853Z"></ns2:OfferExpiration>
+    </ns2:TimeLimits>
+    <ns2:TotalPrice>
+        <ns2:DetailCurrencyPrice>
+            <ns2:Total Code="SAR">943.00</ns2:Total>
+        </ns2:DetailCurrencyPrice>
+    </ns2:TotalPrice>
+    <ns2:Penalty RefundableInd="false">
+        <ns2:Details>
+            <ns2:Detail>
+                <ns2:Type>Exchange/Before departure/ADT</ns2:Type>
+                <ns2:Amounts>
+                    <ns2:Amount>
+                        <ns2:CurrencyAmountValue>282.00</ns2:CurrencyAmountValue>
+                    </ns2:Amount>
+                </ns2:Amounts>
+            </ns2:Detail>
+            <ns2:Detail>
+                <ns2:Type>Exchange/After departure/ADT</ns2:Type>
+                <ns2:Amounts>
+                    <ns2:Amount>
+                        <ns2:CurrencyAmountValue>282.00</ns2:CurrencyAmountValue>
+                    </ns2:Amount>
+                </ns2:Amounts>
+            </ns2:Detail>
+            <ns2:Detail>
+                <ns2:Type>Refund/Before departure/ADT</ns2:Type>
+                <ns2:Amounts>
+                    <ns2:Amount>
+                        <ns2:CurrencyAmountValue>282.00</ns2:CurrencyAmountValue>
+                    </ns2:Amount>
+                </ns2:Amounts>
+            </ns2:Detail>
+            <ns2:Detail>
+                <ns2:Type>Refund/After departure/ADT</ns2:Type>
+                <ns2:Amounts>
+                    <ns2:Amount>
+                        <ns2:CurrencyAmountValue></ns2:CurrencyAmountValue>
+                    </ns2:Amount>
+                </ns2:Amounts>
+            </ns2:Detail>
+        </ns2:Details>
+    </ns2:Penalty>
+    <ns2:PricedOffer>
+        <ns2:OfferPrice OfferItemID="1">
+            <ns2:RequestedDate>
+                <ns2:PriceDetail>
+                    <ns2:TotalAmount>
+                        <ns2:DetailCurrencyPrice>
+                            <ns2:Total Code="SAR">943.00</ns2:Total>
+                            <ns2:Taxes>
+                                <ns2:Total Code="SAR">491.00</ns2:Total>
+                            </ns2:Taxes>
+                        </ns2:DetailCurrencyPrice>
+                    </ns2:TotalAmount>
+                    <ns2:BaseAmount Code="SAR">452.00</ns2:BaseAmount>
+                    <ns2:Taxes>
+                        <ns2:Total Code="SAR">491.00</ns2:Total>
+                    </ns2:Taxes>
+                    <ns2:SegmentReferences OnPoint="JED" OffPoint="DXB">
+                        SEG-ME365-ME365-201907241225-201907241450-O
+                        SEG-ME428-ME428-201907241625-201907242040-O
+                    </ns2:SegmentReferences>
+                </ns2:PriceDetail>
+                <ns2:Associations>
+                    <ns2:AssociatedTraveler>
+                        <ns2:TravelerReferences>PAX1</ns2:TravelerReferences>
+                    </ns2:AssociatedTraveler>
+                </ns2:Associations>
+            </ns2:RequestedDate>
+            <ns2:FareDetail>
+                <ns2:FareComponent refs="RE2SA1-R">
+                    <ns2:SegmentReference ON_Point="JED" OFF_Point="BEY"></ns2:SegmentReference>
+                </ns2:FareComponent>
+                <ns2:FareComponent refs="RELB-R">
+                    <ns2:SegmentReference ON_Point="BEY" OFF_Point="DXB"></ns2:SegmentReference>
+                </ns2:FareComponent>
+                <ns2:PriceClassReference>Economy-Low</ns2:PriceClassReference>
+            </ns2:FareDetail>
+        </ns2:OfferPrice>
+        <ns2:Associations>
+            <ns2:ApplicableFlight>
+                <ns2:FlightSegmentReference ref="SEG-ME365-ME365-201907241225-201907241450-O">
+                    <ns2:Cabin>
+                        <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                        <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                    </ns2:Cabin>
+                    <ns2:ClassOfService>
+                        <ns2:Code SeatsLeft="9">R</ns2:Code>
+                        <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                    </ns2:ClassOfService>
+                    <ns2:BagDetailAssociation>
+                        <ns2:CheckedBagReferences>KG-30</ns2:CheckedBagReferences>
+                    </ns2:BagDetailAssociation>
+                    <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                </ns2:FlightSegmentReference>
+                <ns2:FlightSegmentReference ref="SEG-ME428-ME428-201907241625-201907242040-O">
+                    <ns2:Cabin>
+                        <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                        <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                    </ns2:Cabin>
+                    <ns2:ClassOfService>
+                        <ns2:Code SeatsLeft="9">R</ns2:Code>
+                        <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                    </ns2:ClassOfService>
+                    <ns2:BagDetailAssociation>
+                        <ns2:CheckedBagReferences>KG-30</ns2:CheckedBagReferences>
+                    </ns2:BagDetailAssociation>
+                    <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                </ns2:FlightSegmentReference>
+                <ns2:OriginDestinationReferences>JEDDXB</ns2:OriginDestinationReferences>
+                <ns2:FlightReferences>
+                    FL-SEG-ME365-ME365-201907241225-201907241450-OSEG-ME428-ME428-201907241625-201907242040-O
+                </ns2:FlightReferences>
+            </ns2:ApplicableFlight>
+        </ns2:Associations>
+    </ns2:PricedOffer>
+</ns2:AirlineOffer>
+<ns2:AirlineOffer refs="">
+    <ns2:OfferID Owner="ME" ObjectKey="ME-107">1S-SV-641-107</ns2:OfferID>
+    <ns2:TimeLimits>
+        <ns2:OfferExpiration DateTime="2019-07-22T12:32:21.853Z"></ns2:OfferExpiration>
+    </ns2:TimeLimits>
+    <ns2:TotalPrice>
+        <ns2:DetailCurrencyPrice>
+            <ns2:Total Code="SAR">943.00</ns2:Total>
+        </ns2:DetailCurrencyPrice>
+    </ns2:TotalPrice>
+    <ns2:Penalty RefundableInd="false">
+        <ns2:Details>
+            <ns2:Detail>
+                <ns2:Type>Exchange/Before departure/ADT</ns2:Type>
+                <ns2:Amounts>
+                    <ns2:Amount>
+                        <ns2:CurrencyAmountValue>282.00</ns2:CurrencyAmountValue>
+                    </ns2:Amount>
+                </ns2:Amounts>
+            </ns2:Detail>
+            <ns2:Detail>
+                <ns2:Type>Exchange/After departure/ADT</ns2:Type>
+                <ns2:Amounts>
+                    <ns2:Amount>
+                        <ns2:CurrencyAmountValue>282.00</ns2:CurrencyAmountValue>
+                    </ns2:Amount>
+                </ns2:Amounts>
+            </ns2:Detail>
+            <ns2:Detail>
+                <ns2:Type>Refund/Before departure/ADT</ns2:Type>
+                <ns2:Amounts>
+                    <ns2:Amount>
+                        <ns2:CurrencyAmountValue>282.00</ns2:CurrencyAmountValue>
+                    </ns2:Amount>
+                </ns2:Amounts>
+            </ns2:Detail>
+            <ns2:Detail>
+                <ns2:Type>Refund/After departure/ADT</ns2:Type>
+                <ns2:Amounts>
+                    <ns2:Amount>
+                        <ns2:CurrencyAmountValue></ns2:CurrencyAmountValue>
+                    </ns2:Amount>
+                </ns2:Amounts>
+            </ns2:Detail>
+        </ns2:Details>
+    </ns2:Penalty>
+    <ns2:PricedOffer>
+        <ns2:OfferPrice OfferItemID="1">
+            <ns2:RequestedDate>
+                <ns2:PriceDetail>
+                    <ns2:TotalAmount>
+                        <ns2:DetailCurrencyPrice>
+                            <ns2:Total Code="SAR">943.00</ns2:Total>
+                            <ns2:Taxes>
+                                <ns2:Total Code="SAR">491.00</ns2:Total>
+                            </ns2:Taxes>
+                        </ns2:DetailCurrencyPrice>
+                    </ns2:TotalAmount>
+                    <ns2:BaseAmount Code="SAR">452.00</ns2:BaseAmount>
+                    <ns2:Taxes>
+                        <ns2:Total Code="SAR">491.00</ns2:Total>
+                    </ns2:Taxes>
+                    <ns2:SegmentReferences OnPoint="JED" OffPoint="DXB">
+                        SEG-SV641-ME4641-201907240940-201907241235-O
+                        SEG-ME428-ME428-201907241625-201907242040-O
+                    </ns2:SegmentReferences>
+                </ns2:PriceDetail>
+                <ns2:Associations>
+                    <ns2:AssociatedTraveler>
+                        <ns2:TravelerReferences>PAX1</ns2:TravelerReferences>
+                    </ns2:AssociatedTraveler>
+                </ns2:Associations>
+            </ns2:RequestedDate>
+            <ns2:FareDetail>
+                <ns2:FareComponent refs="RE2SA1-R">
+                    <ns2:SegmentReference ON_Point="JED" OFF_Point="BEY"></ns2:SegmentReference>
+                </ns2:FareComponent>
+                <ns2:FareComponent refs="RELB-R">
+                    <ns2:SegmentReference ON_Point="BEY" OFF_Point="DXB"></ns2:SegmentReference>
+                </ns2:FareComponent>
+                <ns2:PriceClassReference>Economy-Low</ns2:PriceClassReference>
+            </ns2:FareDetail>
+        </ns2:OfferPrice>
+        <ns2:Associations>
+            <ns2:ApplicableFlight>
+                <ns2:FlightSegmentReference ref="SEG-SV641-ME4641-201907240940-201907241235-O">
+                    <ns2:Cabin>
+                        <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                        <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                    </ns2:Cabin>
+                    <ns2:ClassOfService>
+                        <ns2:Code SeatsLeft="4">R</ns2:Code>
+                        <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                    </ns2:ClassOfService>
+                    <ns2:BagDetailAssociation>
+                        <ns2:CheckedBagReferences>KG-30</ns2:CheckedBagReferences>
+                    </ns2:BagDetailAssociation>
+                    <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                </ns2:FlightSegmentReference>
+                <ns2:FlightSegmentReference ref="SEG-ME428-ME428-201907241625-201907242040-O">
+                    <ns2:Cabin>
+                        <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                        <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                    </ns2:Cabin>
+                    <ns2:ClassOfService>
+                        <ns2:Code SeatsLeft="9">R</ns2:Code>
+                        <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                    </ns2:ClassOfService>
+                    <ns2:BagDetailAssociation>
+                        <ns2:CheckedBagReferences>KG-30</ns2:CheckedBagReferences>
+                    </ns2:BagDetailAssociation>
+                    <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                </ns2:FlightSegmentReference>
+                <ns2:OriginDestinationReferences>JEDDXB</ns2:OriginDestinationReferences>
+                <ns2:FlightReferences>
+                    FL-SEG-SV641-ME4641-201907240940-201907241235-OSEG-ME428-ME428-201907241625-201907242040-O
+                </ns2:FlightReferences>
+            </ns2:ApplicableFlight>
+        </ns2:Associations>
+    </ns2:PricedOffer>
+</ns2:AirlineOffer>
+</ns2:AirlineOffers>
+<ns2:AirlineOffers>
+<ns2:AirlineOfferSnapshot>
+    <ns2:Highest>
+        <ns2:EncodedCurrencyPrice Code="SAR">610.00</ns2:EncodedCurrencyPrice>
+    </ns2:Highest>
+    <ns2:Lowest>
+        <ns2:EncodedCurrencyPrice Code="SAR">610.00</ns2:EncodedCurrencyPrice>
+    </ns2:Lowest>
+</ns2:AirlineOfferSnapshot>
+<ns2:Owner>1S</ns2:Owner>
+<ns2:AirlineOffer refs="">
+    <ns2:OfferID Owner="FZ" ObjectKey="FZ-0">1S-FZ-836-0</ns2:OfferID>
+    <ns2:TimeLimits>
+        <ns2:OfferExpiration DateTime="2019-07-22T12:32:21.823Z"></ns2:OfferExpiration>
+        <ns2:OtherLimits>
+            <ns2:OtherLimit>
+                <ns2:TicketByTimeLimit>
+                    <ns2:TicketBy>2019-07-24T00:00:00.000</ns2:TicketBy>
+                </ns2:TicketByTimeLimit>
+            </ns2:OtherLimit>
+        </ns2:OtherLimits>
+    </ns2:TimeLimits>
+    <ns2:TotalPrice>
+        <ns2:DetailCurrencyPrice>
+            <ns2:Total Code="SAR">610.00</ns2:Total>
+        </ns2:DetailCurrencyPrice>
+    </ns2:TotalPrice>
+    <ns2:Penalty RefundableInd="true">
+        <ns2:Details>
+            <ns2:Detail>
+                <ns2:Type>Exchange/Before departure/ADT</ns2:Type>
+                <ns2:Amounts>
+                    <ns2:Amount>
+                        <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                    </ns2:Amount>
+                </ns2:Amounts>
+            </ns2:Detail>
+            <ns2:Detail>
+                <ns2:Type>Exchange/After departure/ADT</ns2:Type>
+                <ns2:Amounts>
+                    <ns2:Amount>
+                        <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                    </ns2:Amount>
+                </ns2:Amounts>
+            </ns2:Detail>
+            <ns2:Detail>
+                <ns2:Type>Refund/Before departure/ADT</ns2:Type>
+                <ns2:Amounts>
+                    <ns2:Amount>
+                        <ns2:CurrencyAmountValue>375.00</ns2:CurrencyAmountValue>
+                    </ns2:Amount>
+                </ns2:Amounts>
+            </ns2:Detail>
+            <ns2:Detail>
+                <ns2:Type>Refund/After departure/ADT</ns2:Type>
+                <ns2:Amounts>
+                    <ns2:Amount>
+                        <ns2:CurrencyAmountValue>375.00</ns2:CurrencyAmountValue>
+                    </ns2:Amount>
+                </ns2:Amounts>
+            </ns2:Detail>
+        </ns2:Details>
+    </ns2:Penalty>
+    <ns2:PricedOffer>
+        <ns2:OfferPrice OfferItemID="1">
+            <ns2:RequestedDate>
+                <ns2:PriceDetail>
+                    <ns2:TotalAmount>
+                        <ns2:DetailCurrencyPrice>
+                            <ns2:Total Code="SAR">610.00</ns2:Total>
+                            <ns2:Taxes>
+                                <ns2:Total Code="SAR">218.00</ns2:Total>
+                            </ns2:Taxes>
+                        </ns2:DetailCurrencyPrice>
+                    </ns2:TotalAmount>
+                    <ns2:BaseAmount Code="SAR">392.00</ns2:BaseAmount>
+                    <ns2:Taxes>
+                        <ns2:Total Code="SAR">218.00</ns2:Total>
+                    </ns2:Taxes>
+                    <ns2:SegmentReferences OnPoint="JED" OffPoint="DXB">
+                        SEG-FZ836-FZ836-201907240745-201907241145-O
+                    </ns2:SegmentReferences>
+                </ns2:PriceDetail>
+                <ns2:Associations>
+                    <ns2:AssociatedTraveler>
+                        <ns2:TravelerReferences>PAX1</ns2:TravelerReferences>
+                    </ns2:AssociatedTraveler>
+                </ns2:Associations>
+            </ns2:RequestedDate>
+            <ns2:FareDetail>
+                <ns2:FareComponent refs="LOWPRSA1-L">
+                    <ns2:SegmentReference ON_Point="JED" OFF_Point="DXB"></ns2:SegmentReference>
+                </ns2:FareComponent>
+                <ns2:PriceClassReference>Economy-Low</ns2:PriceClassReference>
+            </ns2:FareDetail>
+        </ns2:OfferPrice>
+        <ns2:Associations>
+            <ns2:ApplicableFlight>
+                <ns2:FlightSegmentReference ref="SEG-FZ836-FZ836-201907240745-201907241145-O">
+                    <ns2:Cabin>
+                        <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                        <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                    </ns2:Cabin>
+                    <ns2:ClassOfService>
+                        <ns2:Code SeatsLeft="7">L</ns2:Code>
+                        <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                    </ns2:ClassOfService>
+                    <ns2:BagDetailAssociation>
+                        <ns2:CheckedBagReferences>KG-20</ns2:CheckedBagReferences>
+                    </ns2:BagDetailAssociation>
+                    <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                </ns2:FlightSegmentReference>
+                <ns2:OriginDestinationReferences>JEDDXB</ns2:OriginDestinationReferences>
+                <ns2:FlightReferences>FL-SEG-FZ836-FZ836-201907240745-201907241145-O
+                </ns2:FlightReferences>
+            </ns2:ApplicableFlight>
+        </ns2:Associations>
+    </ns2:PricedOffer>
+</ns2:AirlineOffer>
+<ns2:AirlineOffer refs="">
+    <ns2:OfferID Owner="FZ" ObjectKey="FZ-1">1S-FZ-832-1</ns2:OfferID>
+    <ns2:TimeLimits>
+        <ns2:OfferExpiration DateTime="2019-07-22T12:32:21.824Z"></ns2:OfferExpiration>
+        <ns2:OtherLimits>
+            <ns2:OtherLimit>
+                <ns2:TicketByTimeLimit>
+                    <ns2:TicketBy>2019-07-24T00:00:00.000</ns2:TicketBy>
+                </ns2:TicketByTimeLimit>
+            </ns2:OtherLimit>
+        </ns2:OtherLimits>
+    </ns2:TimeLimits>
+    <ns2:TotalPrice>
+        <ns2:DetailCurrencyPrice>
+            <ns2:Total Code="SAR">610.00</ns2:Total>
+        </ns2:DetailCurrencyPrice>
+    </ns2:TotalPrice>
+    <ns2:Penalty RefundableInd="true">
+        <ns2:Details>
+            <ns2:Detail>
+                <ns2:Type>Exchange/Before departure/ADT</ns2:Type>
+                <ns2:Amounts>
+                    <ns2:Amount>
+                        <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                    </ns2:Amount>
+                </ns2:Amounts>
+            </ns2:Detail>
+            <ns2:Detail>
+                <ns2:Type>Exchange/After departure/ADT</ns2:Type>
+                <ns2:Amounts>
+                    <ns2:Amount>
+                        <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                    </ns2:Amount>
+                </ns2:Amounts>
+            </ns2:Detail>
+            <ns2:Detail>
+                <ns2:Type>Refund/Before departure/ADT</ns2:Type>
+                <ns2:Amounts>
+                    <ns2:Amount>
+                        <ns2:CurrencyAmountValue>375.00</ns2:CurrencyAmountValue>
+                    </ns2:Amount>
+                </ns2:Amounts>
+            </ns2:Detail>
+            <ns2:Detail>
+                <ns2:Type>Refund/After departure/ADT</ns2:Type>
+                <ns2:Amounts>
+                    <ns2:Amount>
+                        <ns2:CurrencyAmountValue>375.00</ns2:CurrencyAmountValue>
+                    </ns2:Amount>
+                </ns2:Amounts>
+            </ns2:Detail>
+        </ns2:Details>
+    </ns2:Penalty>
+    <ns2:PricedOffer>
+        <ns2:OfferPrice OfferItemID="1">
+            <ns2:RequestedDate>
+                <ns2:PriceDetail>
+                    <ns2:TotalAmount>
+                        <ns2:DetailCurrencyPrice>
+                            <ns2:Total Code="SAR">610.00</ns2:Total>
+                            <ns2:Taxes>
+                                <ns2:Total Code="SAR">218.00</ns2:Total>
+                            </ns2:Taxes>
+                        </ns2:DetailCurrencyPrice>
+                    </ns2:TotalAmount>
+                    <ns2:BaseAmount Code="SAR">392.00</ns2:BaseAmount>
+                    <ns2:Taxes>
+                        <ns2:Total Code="SAR">218.00</ns2:Total>
+                    </ns2:Taxes>
+                    <ns2:SegmentReferences OnPoint="JED" OffPoint="DXB">
+                        SEG-FZ832-FZ832-201907241115-201907241515-O
+                    </ns2:SegmentReferences>
+                </ns2:PriceDetail>
+                <ns2:Associations>
+                    <ns2:AssociatedTraveler>
+                        <ns2:TravelerReferences>PAX1</ns2:TravelerReferences>
+                    </ns2:AssociatedTraveler>
+                </ns2:Associations>
+            </ns2:RequestedDate>
+            <ns2:FareDetail>
+                <ns2:FareComponent refs="LOWPRSA1-L">
+                    <ns2:SegmentReference ON_Point="JED" OFF_Point="DXB"></ns2:SegmentReference>
+                </ns2:FareComponent>
+                <ns2:PriceClassReference>Economy-Low</ns2:PriceClassReference>
+            </ns2:FareDetail>
+        </ns2:OfferPrice>
+        <ns2:Associations>
+            <ns2:ApplicableFlight>
+                <ns2:FlightSegmentReference ref="SEG-FZ832-FZ832-201907241115-201907241515-O">
+                    <ns2:Cabin>
+                        <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                        <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                    </ns2:Cabin>
+                    <ns2:ClassOfService>
+                        <ns2:Code SeatsLeft="7">L</ns2:Code>
+                        <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                    </ns2:ClassOfService>
+                    <ns2:BagDetailAssociation>
+                        <ns2:CheckedBagReferences>KG-20</ns2:CheckedBagReferences>
+                    </ns2:BagDetailAssociation>
+                    <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                </ns2:FlightSegmentReference>
+                <ns2:OriginDestinationReferences>JEDDXB</ns2:OriginDestinationReferences>
+                <ns2:FlightReferences>FL-SEG-FZ832-FZ832-201907241115-201907241515-O
+                </ns2:FlightReferences>
+            </ns2:ApplicableFlight>
+        </ns2:Associations>
+    </ns2:PricedOffer>
+</ns2:AirlineOffer>
+<ns2:AirlineOffer refs="">
+    <ns2:OfferID Owner="FZ" ObjectKey="FZ-2">1S-FZ-834-2</ns2:OfferID>
+    <ns2:TimeLimits>
+        <ns2:OfferExpiration DateTime="2019-07-22T12:32:21.824Z"></ns2:OfferExpiration>
+        <ns2:OtherLimits>
+            <ns2:OtherLimit>
+                <ns2:TicketByTimeLimit>
+                    <ns2:TicketBy>2019-07-24T00:00:00.000</ns2:TicketBy>
+                </ns2:TicketByTimeLimit>
+            </ns2:OtherLimit>
+        </ns2:OtherLimits>
+    </ns2:TimeLimits>
+    <ns2:TotalPrice>
+        <ns2:DetailCurrencyPrice>
+            <ns2:Total Code="SAR">610.00</ns2:Total>
+        </ns2:DetailCurrencyPrice>
+    </ns2:TotalPrice>
+    <ns2:Penalty RefundableInd="true">
+        <ns2:Details>
+            <ns2:Detail>
+                <ns2:Type>Exchange/Before departure/ADT</ns2:Type>
+                <ns2:Amounts>
+                    <ns2:Amount>
+                        <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                    </ns2:Amount>
+                </ns2:Amounts>
+            </ns2:Detail>
+            <ns2:Detail>
+                <ns2:Type>Exchange/After departure/ADT</ns2:Type>
+                <ns2:Amounts>
+                    <ns2:Amount>
+                        <ns2:CurrencyAmountValue>0.00</ns2:CurrencyAmountValue>
+                    </ns2:Amount>
+                </ns2:Amounts>
+            </ns2:Detail>
+            <ns2:Detail>
+                <ns2:Type>Refund/Before departure/ADT</ns2:Type>
+                <ns2:Amounts>
+                    <ns2:Amount>
+                        <ns2:CurrencyAmountValue>375.00</ns2:CurrencyAmountValue>
+                    </ns2:Amount>
+                </ns2:Amounts>
+            </ns2:Detail>
+            <ns2:Detail>
+                <ns2:Type>Refund/After departure/ADT</ns2:Type>
+                <ns2:Amounts>
+                    <ns2:Amount>
+                        <ns2:CurrencyAmountValue>375.00</ns2:CurrencyAmountValue>
+                    </ns2:Amount>
+                </ns2:Amounts>
+            </ns2:Detail>
+        </ns2:Details>
+    </ns2:Penalty>
+    <ns2:PricedOffer>
+        <ns2:OfferPrice OfferItemID="1">
+            <ns2:RequestedDate>
+                <ns2:PriceDetail>
+                    <ns2:TotalAmount>
+                        <ns2:DetailCurrencyPrice>
+                            <ns2:Total Code="SAR">610.00</ns2:Total>
+                            <ns2:Taxes>
+                                <ns2:Total Code="SAR">218.00</ns2:Total>
+                            </ns2:Taxes>
+                        </ns2:DetailCurrencyPrice>
+                    </ns2:TotalAmount>
+                    <ns2:BaseAmount Code="SAR">392.00</ns2:BaseAmount>
+                    <ns2:Taxes>
+                        <ns2:Total Code="SAR">218.00</ns2:Total>
+                    </ns2:Taxes>
+                    <ns2:SegmentReferences OnPoint="JED" OffPoint="DXB">
+                        SEG-FZ834-FZ834-201907241735-201907242135-O
+                    </ns2:SegmentReferences>
+                </ns2:PriceDetail>
+                <ns2:Associations>
+                    <ns2:AssociatedTraveler>
+                        <ns2:TravelerReferences>PAX1</ns2:TravelerReferences>
+                    </ns2:AssociatedTraveler>
+                </ns2:Associations>
+            </ns2:RequestedDate>
+            <ns2:FareDetail>
+                <ns2:FareComponent refs="LOWPRSA1-L">
+                    <ns2:SegmentReference ON_Point="JED" OFF_Point="DXB"></ns2:SegmentReference>
+                </ns2:FareComponent>
+                <ns2:PriceClassReference>Economy-Low</ns2:PriceClassReference>
+            </ns2:FareDetail>
+        </ns2:OfferPrice>
+        <ns2:Associations>
+            <ns2:ApplicableFlight>
+                <ns2:FlightSegmentReference ref="SEG-FZ834-FZ834-201907241735-201907242135-O">
+                    <ns2:Cabin>
+                        <ns2:CabinDesignator>Y</ns2:CabinDesignator>
+                        <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                    </ns2:Cabin>
+                    <ns2:ClassOfService>
+                        <ns2:Code SeatsLeft="7">L</ns2:Code>
+                        <ns2:MarketingName>ECONOMY</ns2:MarketingName>
+                    </ns2:ClassOfService>
+                    <ns2:BagDetailAssociation>
+                        <ns2:CheckedBagReferences>KG-20</ns2:CheckedBagReferences>
+                    </ns2:BagDetailAssociation>
+                    <ns2:MarriedSegmentGroup>0</ns2:MarriedSegmentGroup>
+                </ns2:FlightSegmentReference>
+                <ns2:OriginDestinationReferences>JEDDXB</ns2:OriginDestinationReferences>
+                <ns2:FlightReferences>FL-SEG-FZ834-FZ834-201907241735-201907242135-O
+                </ns2:FlightReferences>
+            </ns2:ApplicableFlight>
+        </ns2:Associations>
+    </ns2:PricedOffer>
+</ns2:AirlineOffer>
+</ns2:AirlineOffers>

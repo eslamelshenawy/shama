@@ -145,18 +145,18 @@
                                     @if($WebmasterSection->comments_status)
                                         @if(count($Topic->newComments) >0)
                                             <div title="{{ trans('backLang.comments') }}">
-                                                <a href="{{ route('topicsComments',[$WebmasterSection->id,$Topic->id]) }}">
-                                                    <small style="color:red"><i class="material-icons"
-                                                                                style="font-size: 14px;color:red">
-                                                            &#xe0b9;</i> {{count($Topic->newComments)}}</small>
-                                                </a>
+                                                <!--<a href="{{ route('topicsComments',[$WebmasterSection->id,$Topic->id]) }}">-->
+                                                <!--    <small style="color:red"><i class="material-icons"-->
+                                                <!--                                style="font-size: 14px;color:red">-->
+                                                <!--            &#xe0b9;</i> {{count($Topic->newComments)}}</small>-->
+                                                <!--</a>-->
                                             </div>
                                         @elseif(count($Topic->comments) >0)
                                             <div title="{{ trans('backLang.comments') }}">
-                                                <a href="{{ route('topicsComments',[$WebmasterSection->id,$Topic->id]) }}">
-                                                    <small><i class="material-icons" style="font-size: 14px">
-                                                            &#xe0b9;</i> {{count($Topic->comments)}}</small>
-                                                </a>
+                                                <!--<a href="{{ route('topicsComments',[$WebmasterSection->id,$Topic->id]) }}">-->
+                                                <!--    <small><i class="material-icons" style="font-size: 14px">-->
+                                                <!--            &#xe0b9;</i> {{count($Topic->comments)}}</small>-->
+                                                <!--</a>-->
                                             </div>
                                         @endif
                                     @endif

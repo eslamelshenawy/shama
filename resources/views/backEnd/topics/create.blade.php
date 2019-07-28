@@ -337,7 +337,7 @@
                     </label>
                     <div class="col-sm-10">
                         <input placeholder="" class="jscolor" id="spcialprice" required="" dir="ltr"
-                               name="color" value="null">
+                               name="color" >
                     </div>
                 </div>
                 @endif

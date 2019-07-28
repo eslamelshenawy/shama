@@ -62,7 +62,14 @@
                                 <select name="category_id" id="category_id" class="form-control c-select">
                                     <option value="0">{{ trans('backLang.Categories') }}</option>
                                     @foreach(\App\category::get()  as $type )
+                                      @if(App::getLocale()  == 'en')
+
                                         <option value="{{$type->id}}"{{($products->category_id == $type->id) ? 'selected' : ''  }}>{{$type->name_en}}</option>
+                                                                                                                                @else
+                                              <option value="{{$type->id}}"{{($products->category_id == $type->id) ? 'selected' : ''  }}>{{$type->name_heb}}</option>
+                                                                                                        @endif
+            
+
                                     @endforeach
                                 </select>
                             </div>
@@ -74,7 +81,14 @@
                                 <select name="subcate_id" id="subcate_id" class="form-control c-select">
                                     <option value="0">{{ trans('backLang.subcategory_products') }}</option>
                                     @foreach(\App\subcategory::get()  as $type )
+                                                                                @if(App::getLocale()  == 'en')
+
                                         <option value="{{$type->id}}" {{($products->subcategory_id == $type->id) ? 'selected' : ''  }}>{{$type->name_en}}</option>
+                                                                                        @else
+                                              <option value="{{$type->id}}" {{($products->subcategory_id == $type->id) ? 'selected' : ''  }}>{{$type->name_heb}}</option>
+                                            @endif
+
+
                                     @endforeach
                                 </select>
                             </div>
@@ -86,7 +100,13 @@
                                 <select name="brand_id" id="brand_id" class="form-control c-select">
                                     <option value="0">{{ trans('backLang.select_type') }}</option>
                                     @foreach(\App\Topic::where('webmaster_id',13)->get()  as $type )
+                                            @if(App::getLocale()  == 'en')
+
                                         <option value="{{$type->id}}" {{($products->brand_id == $type->id) ? 'selected' : ''  }}>{{$type->title_en}}</option>
+                                                @else
+                                        <option value="{{$type->id}}" {{($products->brand_id == $type->id) ? 'selected' : ''  }}>{{$type->title_il}}</option>
+                                            @endif
+
                                     @endforeach
                                 </select>
                             </div>
@@ -122,7 +142,7 @@
                             </label>
                             <div class="col-sm-10">
                                 <div class="box p-a-xs">
-                                    {!! Form::textarea('details_il',$products->details_il, array('ui-jp'=>'summernote','placeholder' => '','class' => 'form-control summernote', 'dir'=>trans('backLang.ltr'),'ui-options'=>'{height: 300}')) !!}
+                                    {!! Form::textarea('details_il',$products->details_il, array('ui-jp'=>'summernote','placeholder' => '','class' => 'form-control summernote', 'dir'=>'ltr','ui-options'=>'{height: 300}')) !!}
                                 </div>
                             </div>
                         </div>
@@ -213,20 +233,29 @@
                             </div>
                         @endif
                         @if($setting_filter->filters_standard  == 1)
+
                             <div class="form-group row">
                                 <label for="father_id"
                                        class="col-sm-2 form-control-label"> {{ trans('backLang.select_Standard_gold') }} </label>
                                 <div class="col-sm-10">
-                                    <select name="standard_gold" id="standard_gold" class="form-control c-select">
-                                        <option value="0">{{ trans('backLang.select_Standard_gold') }}</option>
-                                        @foreach(\App\Topic::where('webmaster_id',15)->get()  as $type )
+                                    
+                             <select name="standard_gold[]" id="standard_gold" class="form-control select2-multiple" multiple
+                                                              ui-jp="select2"
+                                                            ui-options="{theme: 'bootstrap'}" >
+                                   
+                                        @foreach(\App\Topic::where('webmaster_id',15)->get()  as $key=>  $type )
+                                        
                                             @if(App::getLocale()  == 'en')
-                                                <option value="{{$type->id}}" {{($products->standard_gold == $type->id) ? 'selected' : ''  }}>{{$type->title_en}}</option>
+                                                <option value="{{$type->id}}" {{($products->standardgold[$key]->standard_gold == $type->id) ? 'selected' : ''  }}>{{$type->title_en}}</option>
                                             @else
-                                                <option value="{{$type->id}}" {{($products->standard_gold == $type->id) ? 'selected' : ''  }}>{{$type->title_il}}</option>
+                                                <option value="{{$type->id}}" {{($products->standardgold[$key]->standard_gold == $type->id) ? 'selected' : ''  }}>{{$type->title_il}}</option>
                                             @endif
                                         @endforeach
-                                    </select>
+                                        
+                                             </select>
+
+                                    
+
                                 </div>
                             </div>
                         @endif
@@ -243,22 +272,22 @@
                                 </div>
                             </div>
                         @endif
-                        @if($setting_filter->seller  == 1)
+                        <!--@if($setting_filter->seller  == 1)-->
 
-                            <div class="form-group row">
-                                <label for="father_id"
-                                       class="col-sm-2 form-control-label"> {{ trans('backLang.select_type_seller') }} </label>
-                                <div class="col-sm-10">
-                                    <select name="seller" id="seller" class="form-control c-select">
-                                        <option>{{ trans('backLang.select_type_seller') }}</option>
-                                        <option value="3" {{($products->seller == 3) ? 'selected' : ''  }}>{{ trans('backLang.best_seller') }}</option>
-                                        <option value="4" {{($products->seller == 4) ? 'selected' : ''  }}>{{ trans('backLang.low_seller') }}</option>
-                                        <option value="5" {{($products->seller == 5) ? 'selected' : ''  }}>{{ trans('backLang.high_seller') }}</option>
-                                    </select>
-                                </div>
+                        <!--    <div class="form-group row">-->
+                        <!--        <label for="father_id"-->
+                        <!--               class="col-sm-2 form-control-label"> {{ trans('backLang.select_type_seller') }} </label>-->
+                        <!--        <div class="col-sm-10">-->
+                        <!--            <select name="seller" id="seller" class="form-control c-select">-->
+                        <!--                <option>{{ trans('backLang.select_type_seller') }}</option>-->
+                        <!--                <option value="3" {{($products->seller == 3) ? 'selected' : ''  }}>{{ trans('backLang.best_seller') }}</option>-->
+                        <!--                <option value="4" {{($products->seller == 4) ? 'selected' : ''  }}>{{ trans('backLang.low_seller') }}</option>-->
+                        <!--                <option value="5" {{($products->seller == 5) ? 'selected' : ''  }}>{{ trans('backLang.high_seller') }}</option>-->
+                        <!--            </select>-->
+                        <!--        </div>-->
 
-                            </div>
-                        @endif
+                        <!--    </div>-->
+                        <!--@endif-->
                         @if($setting_filter->natural  == 1)
 
                             <div class="form-group row">
@@ -284,14 +313,14 @@
                             <div class="col-sm-10">
                                 <div class="radio">
                                     <label class="ui-check ui-check-md">
-                                        <input id="status1" class="has-value" checked="checked" name="status"
+                                        <input id="status1" class="has-value"  {{$products->status == 1 ?'checked' :'' }} name="status"
                                                type="radio" value="1">
                                         <i class="dark-white"></i>
                                         {{ trans('backLang.active') }}
                                     </label>
                                     &nbsp; &nbsp;
                                     <label class="ui-check ui-check-md">
-                                        <input id="status2" class="has-value" name="status" type="radio" value="0">
+                                        <input id="status2" class="has-value" name="status" {{$products->status == 0 ?'checked' :'' }} type="radio" value="0">
                                         <i class="dark-white"></i>
                                         {{ trans('backLang.notActive') }}
                                     </label>

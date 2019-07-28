@@ -49,22 +49,22 @@ Route::get('filter/sections/create', 'filtersController@create')->name('create/f
 Route::get('sub/filter/sections/create', 'filtersController@create_sub')->name('create/sub/filters');
 Route::get('sub/filter/sections', 'filtersController@index_sub')->name('sub/filters');
 
-// products and category and subcategory
+//  and category and subcategory
 Route::get('all/cat/products', 'CategoriesController@index')->name('categories');
 Route::get('all/subcat/products', 'SubCategoriesController@subcat')->name('subcat');
-Route::get('products', 'productsController@products')->name('products');
 Route::get('create/category', 'CategoriesController@categories')->name('create/category');
 Route::get('edit/category/{id}', 'CategoriesController@categories_edit')->name('edit.category');
 Route::post('store/category', 'CategoriesController@store_categories')->name('store/category');
 Route::get('delete/category/{id}', 'CategoriesController@delete_categories')->name('delete.category');
-Route::post('/store/edit/category/{id}', 'productsController@store_edit_categories')->name('store.edit.category');
+Route::post('/store/edit/category/{id}', 'CategoriesController@store_edit_categories')->name('store.edit.category');
 Route::get('create/subcategory', 'SubCategoriesController@subcategories')->name('create/subcategory');
 Route::post('store/subcategory', 'SubCategoriesController@store_subcategories')->name('store.subcategory');
 Route::get('edit/subcategory/{id}', 'SubCategoriesController@subcategories_edit')->name('edit.subcategory');
 Route::get('delete/subcategory/{id}', 'SubCategoriesController@delete_subcategories')->name('delete.category');
 Route::post('/store/edit/subcategory/{id}', 'SubCategoriesController@store_edit_subcategories')->name('store.edit.category');
 
-//
+//products
+Route::get('products', 'productsController@products')->name('products');
 Route::get('create/products', 'productsController@create_products')->name('create.products');
 Route::post('store/products', 'productsController@store_products')->name('store.products');
 Route::get('edit/products/{id}', 'productsController@edit_products')->name('edit.products');
@@ -81,6 +81,9 @@ Route::get('promo/codes/edit/{id}', 'PromoCodeController@edit')->name('promo.cod
 Route::post('promo/codes/update/{id}', 'PromoCodeController@update')->name('promo.code.update');
 Route::get('promo/codes/delete/{id}', 'PromoCodeController@delete')->name('promo.code.delete');
 
+//
+Route::get('users/reg', 'UsersController@users')->name('users/reg');
+Route::get('users/delete/{id}', 'UsersController@delete')->name('users/delete');
 
 
 Route::Group(['prefix' => env('BACKEND_PATH')], function () {
@@ -96,7 +99,7 @@ Route::Group(['prefix' => env('BACKEND_PATH')], function () {
     })->name('NotFound');
 
     // Admin Home
-    Route::get('/admin', 'HomeController@index');
+    Route::get('/admin', 'HomeController@index')->name('admin');
     //Search
     Route::get('/search', 'HomeController@search')->name('adminSearch');
     Route::post('/find', 'HomeController@find')->name('adminFind');

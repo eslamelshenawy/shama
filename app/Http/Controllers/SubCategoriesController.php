@@ -17,6 +17,12 @@ class SubCategoriesController extends Controller
 {
     private $uploadPath = "uploads/topics/";
 
+    public function __construct()
+    {
+        $this->middleware('auth');
+
+    }
+
 
     public function getUploadPath()
     {
@@ -44,42 +50,57 @@ class SubCategoriesController extends Controller
             $request->file($formFileName)->move($path, $fileFinalName);
         }
 
-        foreach(@$request->section_id  as $cat_id){
+        // foreach(@$request->section_id  as $cat_id){
             $category= new subcategory;
             $category->photo= $fileFinalName;
             $category->type_id= $request->type_id;
-            $category->category_id= $cat_id;
+            $category->category_id= $request->section_id;
             $category->name_heb= $request->title_heb;
             $category->name_en= $request->title_en;
             $category->status= $request->status;
             $category->icon= $request->icon;
             $category->save();
-        }
-        return redirect()->route('edit.subcategory',$category->id)->with('message',  trans("backLang.addDone"));
+        // }
+        return redirect()->route('subcat')->with('message',  trans("backLang.addDone"));
     }
 
 //create store_categories
     public function store_edit_subcategories(Request $request,$id){
-        $formFileName = "photo";
-        $fileFinalName = "";
-        if ($request->$formFileName != "") {
-            $fileFinalName = time() .rand(1111,
-                    9999) . '.' . $request->file($formFileName)->getClientOriginalExtension();
-            $path = $this->getUploadPath();
-            $request->file($formFileName)->move($path, $fileFinalName);
-        }
+
 
         $category=  subcategory::find($id);
-        $category->photo= $fileFinalName;
         $category->type_id= $request->type_id;
         $category->category_id= $request->section_id;
         $category->name_heb= $request->title_heb;
         $category->name_en= $request->title_en;
         $category->status= $request->status;
         $category->icon= $request->icon;
+        
+                if($request->photo == null){
+
+        }
+        else{
+                        $formFileName = "photo";
+            $fileFinalName = "";
+            if ($request->$formFileName != "") {
+                $fileFinalName = time() . rand(1111,
+                        9999) . '.' . $request->file($formFileName)->getClientOriginalExtension();
+                $path = $this->getUploadPath();
+                $request->file($formFileName)->move($path, $fileFinalName);
+            }
+
+            $category->photo= $fileFinalName;
+            
+            
+        }
+        
+        
+        
+        
+        
         $category->save();
 
-        return redirect()->route('edit.subcategory',$category->id)->with('message',  trans("backLang.saveDone"));
+        return redirect()->route('subcat')->with('message',  trans("backLang.saveDone"));
     }
 
     //edit sub category

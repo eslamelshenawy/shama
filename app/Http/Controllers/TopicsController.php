@@ -579,7 +579,7 @@ class TopicsController extends Controller
                 // Remove maps
                 Map::where('topic_id', $Topic->id)->delete();
                 // Remove Photos
-                $PhotoFiles = Photo::where('topic_id', $Topic->id)->get();
+                $PhotoFiles = Photo::where('product_id', $Topic->id)->get();
                 if ($PhotoFiles) {
                     foreach ($PhotoFiles as $PhotoFile) {
                         if ($PhotoFile->file != "") {
@@ -587,7 +587,7 @@ class TopicsController extends Controller
                         }
                     }
                 }
-                Photo::where('topic_id', $Topic->id)->delete();
+                Photo::where('product_id', $Topic->id)->delete();
                 // Remove Attach Files
                 $AttachFiles = AttachFile::where('topic_id', $Topic->id)->get();
                 if ($AttachFiles) {

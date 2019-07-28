@@ -18,6 +18,12 @@ class CategoriesController extends Controller
 
     private $uploadPath = "uploads/topics/";
 
+    public function __construct()
+    {
+        $this->middleware('auth');
+
+    }
+
 
     public function getUploadPath()
     {
@@ -57,22 +63,29 @@ class CategoriesController extends Controller
         $category=  category::find($id);
         $category->name_heb= $request->title_heb;
         $category->name_en= $request->title_en;
+        $category->type_id= $request->type_id;
         $category->status= $request->status;
         $category->icon= $request->icon;
 
-        $formFileName = "photo";
-        $fileFinalName = "";
-        if ($request->$formFileName != "") {
-            $fileFinalName = time() . rand(1111,
-                    9999) . '.' . $request->file($formFileName)->getClientOriginalExtension();
-            $path = $this->getUploadPath();
-            $request->file($formFileName)->move($path, $fileFinalName);
-        }
+        if($request->photo == null){
 
-        $category->photo= $fileFinalName;
+        }
+        else{
+            $formFileName = "photo";
+            $fileFinalName = "";
+            if ($request->$formFileName != "") {
+                $fileFinalName = time() . rand(1111,
+                        9999) . '.' . $request->file($formFileName)->getClientOriginalExtension();
+                $path = $this->getUploadPath();
+                $request->file($formFileName)->move($path, $fileFinalName);
+            }
+
+            $category->photo= $fileFinalName;
+
+        }
         $category->save();
 //        dd($category);
-        return redirect()->route('edit.category',$category->id)->with('message',  trans("backLang.saveDone"));
+        return redirect()->route('categories')->with('message',  trans("backLang.saveDone"));
 //        return view('backEnd.categories.edit_gategory',compact('GeneralWebmasterSections'));
 
     }
@@ -101,7 +114,7 @@ class CategoriesController extends Controller
         $category->photo= $fileFinalName;
         $category->save();
 //        dd();
-        return redirect()->route('edit.category',$category->id)->with('message',  trans("backLang.addDone"));
+        return redirect()->route('categories')->with('message',  trans("backLang.addDone"));
 //        return view('backEnd.categories.edit_gategory',compact('GeneralWebmasterSections'));
 
     }

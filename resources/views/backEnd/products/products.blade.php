@@ -1,9 +1,17 @@
 @extends('backEnd.layout')
 @section('content')
+@if (Auth::check())
+
     <div ui-view="" class="app-body" id="view">
         <!-- ############ PAGE START-->
         <div class="padding">
             <div class="box">
+                     @if(session()->has('message'))
+                    <div class="alert alert-success">
+                        {{ session()->get('message') }}
+                    </div>
+                @endif
+
                 <div class="box-header dker">
                     <h3>{{ trans('backLang.products') }}</h3>
                     <small>
@@ -96,6 +104,11 @@
         <!-- ############ PAGE END-->
 
     </div>
+@else
+        return redirect('auth/login');
+
+
+@endif
 
 
 

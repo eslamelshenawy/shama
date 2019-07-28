@@ -7,6 +7,7 @@ use App\setting_filter;
 use App\WebmasterSection;
 use App\category;
 use App\subcategory;
+use App\StandardGold;
 use App\product;
 use Auth;
 use File;
@@ -16,6 +17,13 @@ use Redirect;
 
 class productsController extends Controller
 {
+
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+
+    }
 
     private $uploadPath = "uploads/topics/";
 
@@ -51,7 +59,7 @@ class productsController extends Controller
 
     //create store_categories
     public function store_products(Request $request){
-//        dd($request->all());
+    //   dd($request->all());
         $formFileName = "photo";
         $fileFinalName = "";
         if ($request->$formFileName != "") {
@@ -60,7 +68,6 @@ class productsController extends Controller
             $path = $this->getUploadPath();
             $request->file($formFileName)->move($path, $fileFinalName);
         }
-
             $products= new product;
             $products->photo= $fileFinalName;
             $products->category_id= $request->category_id ;
@@ -78,18 +85,24 @@ class productsController extends Controller
             $products->date_end_price= $request->date_end_price;
             $products->type_men= $request->type_men;
             $products->seller= $request->seller;
-            $products->standard_gold= $request->standard_gold;
             $products->natural= $request->natural;
+            $products->save();
+                     foreach(@$request->standard_gold  as $standard_golds ){
+                     $standardGold= new StandardGold;
+                    $standardGold->standard_gold= $standard_golds;
+                    $standardGold->product_id= $products->id ;
+                    $standardGold->save();
 
-        $products->save();
+                     }
 
-        return redirect()->route('edit.products',$products->id)->with('message',  trans("backLang.addDone"));
+
+        return redirect()->route('products')->with('message',  trans("backLang.addDone"));
     }
 
     //edit products
     public function edit_products($id){
-        $products=  product::find($id);
-//        dd($category);
+        $products=  product::with("standardgold")->find($id);
+        // dd($products->standardgold);
         $setting_filter = setting_filter::find(1);
 
         $GeneralWebmasterSections = WebmasterSection::where('status', '=', '1')->orderby('row_no', 'asc')->get();
@@ -100,7 +113,7 @@ class productsController extends Controller
 
 
     //edit store_categories
-    public function store_edit__products(Request $request){
+    public function store_edit__products(Request $request,$id){
 //        dd($request->all());
         $formFileName = "photo";
         $fileFinalName = "";
@@ -111,7 +124,7 @@ class productsController extends Controller
             $request->file($formFileName)->move($path, $fileFinalName);
         }
 
-        $products= new product;
+        $products=  product::find($id);
         $products->photo= $fileFinalName;
         $products->category_id= $request->category_id ;
         $products->subcategory_id= $request->subcate_id ;
@@ -128,18 +141,42 @@ class productsController extends Controller
         $products->date_end_price= $request->date_end_price;
         $products->type_men= $request->type_men;
         $products->seller= $request->seller;
-        $products->standard_gold= $request->standard_gold;
         $products->natural= $request->natural;
 
         $products->save();
+                  $standardGolds= StandardGold::where("product_id",$id)->get();
+         
+          if($standardGolds->isEmpty()){
+                 foreach(@$request->standard_gold  as $standard_golds ){
+                     $standardGold= new StandardGold;
+                    $standardGold->standard_gold= $standard_golds;
+                    $standardGold->product_id= $products->id ;
+                    $standardGold->save();
 
-        return redirect()->route('edit.products',$products->id)->with('message',  trans("backLang.saveDone"));
+                     }
+
+          }else{
+              
+                       foreach(@$standardGolds  as $key=> $standardGold ){
+                        
+
+                        $standardGold->standard_gold= $request->standard_gold[$key];
+                        $standardGold->product_id= $products->id ;
+                        $standardGold->save();
+                    // dd($standardGold); 
+                                            
+                                           }
+
+          }
+
+
+        return redirect()->route('products')->with('message',  trans("backLang.saveDone"));
     }
 
 
     //delete_products
     public function delete_products($id){
-        $category=  subcategory::find($id);
+        $category=  product::find($id);
         $category->delete();
 //        $GeneralWebmasterSections = WebmasterSection::where('status', '=', '1')->orderby('row_no', 'asc')->get();
         return redirect()->route('products')->with('message',  trans("backLang.deleteDone"));

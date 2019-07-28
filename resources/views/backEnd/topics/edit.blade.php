@@ -349,13 +349,15 @@
                                     <div class="form-group row">
                                         <label for="details_en"
                                                class="col-sm-2 form-control-label">{!!  trans('backLang.bannerDetails') !!}
-                                            @if(Helper::GeneralWebmasterSettings("ar_box_status") && Helper::GeneralWebmasterSettings("en_box_status")){!!  trans('backLang.englishBox') !!}@endif
-                                        </labelil<div class="col-sm-10">
+                                            @if(Helper::GeneralWebmasterSettings("en_box_status") && Helper::GeneralWebmasterSettings("en_box_status")){!!  trans('backLang.englishBox') !!}@endif
+                                        </label>
+                                        <div class="col-sm-10">
                                             <div class="box p-a-xs">
-                                                {!! Form::textarea('details_en',$Topics->details_en, array('ui-jp'=>'summernote','placeholder' => '','class' => 'form-control', 'dir'=>trans('backLang.ltr'),'ui-options'=>'{height: 300}')) !!}
+                                                {!! Form::textarea('details_en',$Topics->details_en, array('ui-jp'=>'summernote','placeholder' => '','class' => 'form-control summernote', 'dir'=>trans('backLang.ltr'),'ui-options'=>'{height: 300}')) !!}
                                             </div>
                                         </div>
                                     </div>
+
                                 @endif
                             @else
                                 @if(Helper::GeneralWebmasterSettings("ar_box_status"))
@@ -553,7 +555,6 @@
 
                         @endif
                         @endif
-
                         @if($WebmasterSection->status_color == 1)
                             <div class="form-group row">
                                 <label for="spcialprice" class="col-sm-2 form-control-label">{{ trans('backLang.color') }}

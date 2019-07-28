@@ -6,9 +6,9 @@
             <div class="box-header dker">
                 <h3><i class="material-icons">&#xe3c9;</i> {{ trans('backLang.editUser') }}</h3>
                 <small>
-                    <a href="{{ route('adminHome') }}">{{ trans('backLang.home') }}</a> /
+                    <a href="{{url('admin')}}">{{ trans('backLang.home') }}</a> /
                     <a href="">{{ trans('backLang.settings') }}</a> /
-                    <a href="">{{ trans('backLang.usersPermissions') }}</a>
+                    <!--<a href="">{{ trans('backLang.usersPermissions') }}</a>-->
                 </small>
             </div>
             <div class="box-tool">
@@ -88,21 +88,21 @@
                 </div>
 
                 @if(@Auth::user()->permissionsGroup->webmaster_status)
-                    <div class="form-group row">
-                        <label for="permissions1"
-                               class="col-sm-2 form-control-label">{!!  trans('backLang.Permission') !!}</label>
-                        <div class="col-sm-10">
-                            <div class="radio">
-                                <select name="permissions_id" id="permissions_id" required
-                                        class="form-control c-select">
-                                    <option value="">- - {!!  trans('backLang.selectPermissionsType') !!} - -</option>
-                                    @foreach ($Permissions as $Permission)
-                                        <option value="{{ $Permission->id  }}" {!! ($Users->permissions_id==$Permission->id) ? "selected='selected'":"" !!}>{{ $Permission->name }}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                        </div>
-                    </div>
+                    <!--<div class="form-group row">-->
+                    <!--    <label for="permissions1"-->
+                    <!--           class="col-sm-2 form-control-label">{!!  trans('backLang.Permission') !!}</label>-->
+                    <!--    <div class="col-sm-10">-->
+                    <!--        <div class="radio">-->
+                    <!--            <select name="permissions_id" id="permissions_id" required-->
+                    <!--                    class="form-control c-select">-->
+                    <!--                <option value="">- - {!!  trans('backLang.selectPermissionsType') !!} - -</option>-->
+                    <!--                @foreach ($Permissions as $Permission)-->
+                    <!--                    <option value="{{ $Permission->id  }}" {!! ($Users->permissions_id==$Permission->id) ? "selected='selected'":"" !!}>{{ $Permission->name }}</option>-->
+                    <!--                @endforeach-->
+                    <!--            </select>-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--</div>-->
 
 
                     <div class="form-group row">
@@ -129,29 +129,29 @@
                     {!! Form::hidden('status',$Users->status) !!}
 
                 @endif
-                <div class="form-group row">
-                    <div class="col-sm-12">
-                        <strong>{{ trans('backLang.connectEmailToConnect') }}</strong>
-                        <hr>
-                    </div>
-                </div>
+                <!--<div class="form-group row">-->
+                <!--    <div class="col-sm-12">-->
+                <!--        <strong>{{ trans('backLang.connectEmailToConnect') }}</strong>-->
+                <!--        <hr>-->
+                <!--    </div>-->
+                <!--</div>-->
 
-                <div class="form-group row">
-                    <label for="connect_email"
-                           class="col-sm-2 form-control-label">{!!  trans('backLang.connectEmail') !!}
-                    </label>
-                    <div class="col-sm-10">
-                        {!! Form::email('connect_email',$Users->connect_email, array('placeholder' => '','class' => 'form-control','id'=>'connect_email')) !!}
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="connect_password"
-                           class="col-sm-2 form-control-label">{!!  trans('backLang.connectPassword') !!}
-                    </label>
-                    <div class="col-sm-10">
-                        {!! Form::text('connect_password',$Users->connect_password, array('placeholder' => '','class' => 'form-control','id'=>'connect_password')) !!}
-                    </div>
-                </div>
+                <!--<div class="form-group row">-->
+                <!--    <label for="connect_email"-->
+                <!--           class="col-sm-2 form-control-label">{!!  trans('backLang.connectEmail') !!}-->
+                <!--    </label>-->
+                <!--    <div class="col-sm-10">-->
+                <!--        {!! Form::email('connect_email',$Users->connect_email, array('placeholder' => '','class' => 'form-control','id'=>'connect_email')) !!}-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--<div class="form-group row">-->
+                <!--    <label for="connect_password"-->
+                <!--           class="col-sm-2 form-control-label">{!!  trans('backLang.connectPassword') !!}-->
+                <!--    </label>-->
+                <!--    <div class="col-sm-10">-->
+                <!--        {!! Form::text('connect_password',$Users->connect_password, array('placeholder' => '','class' => 'form-control','id'=>'connect_password')) !!}-->
+                <!--    </div>-->
+                <!--</div>-->
 
                 <div class="form-group row m-t-md">
                     <div class="col-sm-offset-2 col-sm-10">

@@ -125,7 +125,7 @@
                                 </label>
                                 <div class="col-sm-10">
                                     <div class="box p-a-xs">
-                                        {!! Form::textarea('details_il','<div dir=rtl><br></div>', array('ui-jp'=>'summernote','placeholder' => '','class' => 'form-control summernote', 'dir'=>trans('backLang.rtl'),'ui-options'=>'{height: 300}')) !!}
+                                        {!! Form::textarea('details_il','<div dir=ltr><br></div>', array('ui-jp'=>'summernote','placeholder' => '','class' => 'form-control summernote', 'dir'=>trans('backLang.ltr'),'ui-options'=>'{height: 300}')) !!}
                                     </div>
                                 </div>
                             </div>
@@ -224,16 +224,31 @@
                             <label for="father_id"
                                    class="col-sm-2 form-control-label"> {{ trans('backLang.select_Standard_gold') }} </label>
                             <div class="col-sm-10">
-                                <select name="standard_gold" id="standard_gold" class="form-control c-select">
-                                    <option value="0">{{ trans('backLang.select_Standard_gold') }}</option>
-                                    @foreach(\App\Topic::where('webmaster_id',15)->get()  as $type )
+                                
+                               <select name="standard_gold[]" id="standard_gold" class="form-control select2-multiple" multiple
+                                                              ui-jp="select2"
+                                                            ui-options="{theme: 'bootstrap'}" required>
+                                   
+                                       @foreach(\App\Topic::where('webmaster_id',15)->get()  as $type )
                                         @if(App::getLocale()  == 'en')
                                             <option value="{{$type->id}}">{{$type->title_en}}</option>
                                         @else
                                             <option value="{{$type->id}}">{{$type->title_il}}</option>
                                         @endif
                                     @endforeach
-                                </select>
+                                             
+                                                             </select>
+
+                                <!--<select name="standard_gold" id="standard_gold" class="form-control c-select">-->
+                                <!--    <option value="0">{{ trans('backLang.select_Standard_gold') }}</option>-->
+                                <!--    @foreach(\App\Topic::where('webmaster_id',15)->get()  as $type )-->
+                                <!--        @if(App::getLocale()  == 'en')-->
+                                <!--            <option value="{{$type->id}}">{{$type->title_en}}</option>-->
+                                <!--        @else-->
+                                <!--            <option value="{{$type->id}}">{{$type->title_il}}</option>-->
+                                <!--        @endif-->
+                                <!--    @endforeach-->
+                                <!--</select>-->
                             </div>
                         </div>
                         @endif
@@ -250,22 +265,22 @@
                             </div>
                         </div>
                         @endif
-                        @if($setting_filter->seller  == 1)
+                        <!--@if($setting_filter->seller  == 1)-->
 
-                        <div class="form-group row">
-                            <label for="father_id"
-                                   class="col-sm-2 form-control-label"> {{ trans('backLang.select_type_seller') }} </label>
-                            <div class="col-sm-10">
-                                <select name="seller" id="seller" class="form-control c-select">
-                                    <option value="0">{{ trans('backLang.select_type_seller') }}</option>
-                                    <option value="3">{{ trans('backLang.best_seller') }}</option>
-                                    <option value="4">{{ trans('backLang.low_seller') }}</option>
-                                    <option value="5">{{ trans('backLang.high_seller') }}</option>
-                                </select>
-                            </div>
+                        <!--<div class="form-group row">-->
+                        <!--    <label for="father_id"-->
+                        <!--           class="col-sm-2 form-control-label"> {{ trans('backLang.select_type_seller') }} </label>-->
+                        <!--    <div class="col-sm-10">-->
+                        <!--        <select name="seller" id="seller" class="form-control c-select">-->
+                        <!--            <option value="0">{{ trans('backLang.select_type_seller') }}</option>-->
+                        <!--            <option value="3">{{ trans('backLang.best_seller') }}</option>-->
+                        <!--            <option value="4">{{ trans('backLang.low_seller') }}</option>-->
+                        <!--            <option value="5">{{ trans('backLang.high_seller') }}</option>-->
+                        <!--        </select>-->
+                        <!--    </div>-->
 
-                        </div>
-                        @endif
+                        <!--</div>-->
+                        <!--@endif-->
                         @if($setting_filter->natural  == 1)
 
                         <div class="form-group row">

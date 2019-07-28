@@ -35,7 +35,7 @@ class Topic extends Model
     public function photos()
     {
 
-        return $this->hasMany('App\Photo', 'topic_id')->orderby('row_no', 'asc');
+        return $this->hasMany('App\Photo', 'product_id')->orderby('row_no', 'asc');
     }
 
     //Relation to Attach Files
